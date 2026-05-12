@@ -1,418 +1,335 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html><html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  <!-- SEO -->  <title>Drywall Victorino | Gesseiro em Botucatu | Drywall, Gesso e Elétrica</title>
+  <meta name="description" content="Drywall Victorino é especialista em drywall, gesso, elétrica, LED, pintura e acabamento em Botucatu e região. Solicite orçamento rápido pelo WhatsApp." />
+  <meta name="keywords" content="gesseiro em Botucatu, drywall Botucatu, forro de gesso, sanca, elétrica residencial, gesseiro profissional, drywall Victorino, iluminação LED, pintura residencial" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Drywall Victorino" />
+  <link rel="canonical" href="https://drywallvictorino.com.br/" />  <!-- Open Graph -->  <meta property="og:title" content="Drywall Victorino | Drywall, Gesso e Elétrica em Botucatu" />
+  <meta property="og:description" content="Transforme seu ambiente com acabamento profissional. Orçamento rápido via WhatsApp." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://drywallvictorino.com.br/" />  <!-- Google Tag -->  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18137133953"></script>  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-<title>Drywall Victorino | Gesso, Drywall e Elétrica em Botucatu</title>
+    gtag('config', 'AW-18137133953');
+  </script>  <!-- Schema SEO -->  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Drywall Victorino",
+    "image": "https://drywallvictorino.com.br/logo.png",
+    "url": "https://drywallvictorino.com.br/",
+    "telephone": "+5511983316372",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Botucatu",
+      "addressRegion": "SP",
+      "addressCountry": "BR"
+    },
+    "description": "Empresa especializada em drywall, gesso, elétrica e acabamento em Botucatu e região.",
+    "areaServed": "Botucatu e região",
+    "priceRange": "$$"
+  }
+  </script>  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
 
-<meta name="description" content="Especialistas em drywall, gesso, sancas, elétrica e iluminação LED em Botucatu e região. Atendimento rápido e orçamento via WhatsApp.">
+    body {
+      background: #050505;
+      color: white;
+      line-height: 1.6;
+    }
 
-<meta name="keywords" content="gesseiro em Botucatu, drywall Botucatu, elétrica residencial Botucatu, instalação LED, sancas de gesso, forro drywall">
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 3px solid #f7c600;
+      background: #0d0d0d;
+    }
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+    header h1 {
+      color: #f7c600;
+      font-size: 3rem;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
 
-<style>
+    header p {
+      margin-top: 10px;
+      color: #ccc;
+      font-size: 1.1rem;
+    }
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+    .hero {
+      padding: 70px 20px;
+      text-align: center;
+      max-width: 1200px;
+      margin: auto;
+    }
 
-body{
-font-family:'Montserrat',sans-serif;
-background:#050505;
-color:white;
-line-height:1.6;
-overflow-x:hidden;
-}
+    .hero h2 {
+      font-size: 3.2rem;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
 
-header{
-background:linear-gradient(180deg,#111,#050505);
-padding:80px 20px;
-text-align:center;
-border-bottom:4px solid #f1c40f;
-}
+    .hero p {
+      max-width: 850px;
+      margin: auto;
+      color: #cfcfcf;
+      font-size: 1.2rem;
+    }
 
-.logo{
-font-size:60px;
-font-weight:900;
-color:#f1c40f;
-margin-bottom:20px;
-}
+    .cta {
+      display: inline-block;
+      margin-top: 35px;
+      background: #22c55e;
+      color: white;
+      padding: 18px 38px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: bold;
+      transition: 0.3s;
+    }
 
-.sublogo{
-font-size:22px;
-max-width:900px;
-margin:auto;
-color:#ddd;
-}
+    .cta:hover {
+      transform: scale(1.05);
+    }
 
-.hero{
-padding:80px 20px;
-max-width:1200px;
-margin:auto;
-display:flex;
-flex-direction:column;
-align-items:center;
-text-align:center;
-}
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
 
-.hero h1{
-font-size:56px;
-font-weight:900;
-margin-bottom:30px;
-line-height:1.1;
-}
+    .card {
+      background: #111;
+      padding: 30px;
+      border-radius: 18px;
+      border: 1px solid #1e1e1e;
+      text-align: center;
+    }
 
-.hero p{
-font-size:22px;
-max-width:850px;
-color:#ccc;
-margin-bottom:40px;
-}
+    .card h3 {
+      color: #f7c600;
+      margin-bottom: 15px;
+      font-size: 1.6rem;
+    }
 
-.btn{
-display:inline-block;
-background:#25d366;
-color:white;
-padding:22px 40px;
-border-radius:60px;
-font-size:22px;
-font-weight:700;
-text-decoration:none;
-transition:.3s;
-box-shadow:0 0 20px rgba(37,211,102,.4);
-}
+    .section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 80px 20px;
+    }
 
-.btn:hover{
-transform:scale(1.05);
-}
+    .section-title {
+      text-align: center;
+      font-size: 2.8rem;
+      margin-bottom: 50px;
+    }
 
-.stats{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:25px;
-max-width:1200px;
-margin:70px auto;
-padding:0 20px;
-}
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
 
-.stat{
-background:#111;
-padding:35px;
-border-radius:20px;
-text-align:center;
-border:1px solid #222;
-}
+    .service {
+      background: #111;
+      border-radius: 20px;
+      padding: 30px;
+      border: 1px solid #1e1e1e;
+    }
 
-.stat h2{
-color:#f1c40f;
-font-size:40px;
-margin-bottom:10px;
-}
+    .service h3 {
+      color: #f7c600;
+      margin-bottom: 15px;
+      font-size: 1.7rem;
+    }
 
-.services{
-max-width:1200px;
-margin:100px auto;
-padding:0 20px;
-}
+    .service p {
+      color: #cfcfcf;
+    }
 
-.section-title{
-text-align:center;
-font-size:48px;
-margin-bottom:60px;
-font-weight:900;
-}
+    .about {
+      text-align: center;
+      max-width: 900px;
+      margin: auto;
+    }
 
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:30px;
-}
+    .about p {
+      margin-top: 20px;
+      color: #cfcfcf;
+      font-size: 1.1rem;
+    }
 
-.card{
-background:#111;
-padding:40px;
-border-radius:25px;
-border:1px solid #222;
-transition:.3s;
-}
+    .mission-values {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 50px;
+    }
 
-.card:hover{
-transform:translateY(-10px);
-border-color:#f1c40f;
-}
+    footer {
+      text-align: center;
+      padding: 50px 20px;
+      background: #0d0d0d;
+      border-top: 2px solid #f7c600;
+    }
 
-.card h3{
-font-size:30px;
-margin-bottom:20px;
-color:#f1c40f;
-}
+    footer p {
+      color: #bbb;
+    }
 
-.card p{
-font-size:18px;
-color:#ddd;
-}
+    .whatsapp-float {
+      position: fixed;
+      width: 65px;
+      height: 65px;
+      bottom: 20px;
+      right: 20px;
+      background: #22c55e;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 28px;
+      color: white;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      z-index: 999;
+    }
 
-.benefits{
-background:#0d0d0d;
-padding:100px 20px;
-margin-top:100px;
-}
+    @media(max-width:768px){
+      header h1 {
+        font-size: 2.2rem;
+      }
 
-.benefit-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-max-width:1200px;
-margin:auto;
-}
+      .hero h2 {
+        font-size: 2.2rem;
+      }
 
-.benefit{
-background:#111;
-padding:30px;
-border-radius:20px;
-text-align:center;
-}
-
-.benefit h4{
-color:#f1c40f;
-margin-bottom:15px;
-font-size:24px;
-}
-
-.cta{
-padding:120px 20px;
-text-align:center;
-}
-
-.cta h2{
-font-size:54px;
-margin-bottom:30px;
-}
-
-.cta p{
-font-size:22px;
-max-width:800px;
-margin:auto;
-margin-bottom:40px;
-color:#ccc;
-}
-
-footer{
-padding:50px 20px;
-background:#111;
-text-align:center;
-margin-top:80px;
-border-top:2px solid #222;
-}
-
-footer p{
-color:#999;
-font-size:16px;
-}
-
-.whatsapp{
-position:fixed;
-right:20px;
-bottom:20px;
-background:#25d366;
-width:75px;
-height:75px;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:38px;
-text-decoration:none;
-color:white;
-box-shadow:0 0 20px rgba(37,211,102,.5);
-animation:pulse 2s infinite;
-z-index:999;
-}
-
-@keyframes pulse{
-0%{transform:scale(1);}
-50%{transform:scale(1.1);}
-100%{transform:scale(1);}
-}
-
-@media(max-width:768px){
-
-.logo{
-font-size:42px;
-}
-
-.hero h1{
-font-size:42px;
-}
-
-.hero p{
-font-size:18px;
-}
-
-.section-title{
-font-size:38px;
-}
-
-.cta h2{
-font-size:40px;
-}
-
-}
-
-</style>
-</head>
-
-<body>
-
-<header>
-
-<div class="logo">
-DRYWALL VICTORINO
+      .section-title {
+        font-size: 2rem;
+      }
+    }
+  </style></head>
+<body><header>
+  <h1>Drywall Victorino</h1>
+  <p>Drywall, Gesso, Elétrica, Pintura e Acabamento em Botucatu e Região</p>
+</header><section class="hero">
+  <h2>Transforme Seu Ambiente com Acabamento Profissional</h2>
+  <p>
+    Especialistas em drywall, forros, sancas, elétrica residencial, LED, pintura e acabamento moderno.
+    Atendimento rápido em Botucatu e cidades da região.
+  </p>  <a class="cta" href="https://api.whatsapp.com/send?phone=5511983316372&text=Olá,%20quero%20um%20orçamento">
+    Solicitar Orçamento no WhatsApp
+  </a>
+</section><section class="stats">
+  <div class="card">
+    <h3>+100</h3>
+    <p>Projetos realizados</p>
+  </div>  <div class="card">
+    <h3>Atendimento Rápido</h3>
+    <p>Resposta imediata no WhatsApp</p>
+  </div>  <div class="card">
+    <h3>Qualidade Premium</h3>
+    <p>Acabamento profissional e moderno</p>
+  </div>  <div class="card">
+    <h3>Botucatu e Região</h3>
+    <p>Atendimento residencial e comercial</p>
+  </div>
+</section><section class="section">
+  <h2 class="section-title">Nossos Serviços</h2>  <div class="services">
+    <div class="service">
+      <h3>Drywall e Gesso</h3>
+      <p>
+        Instalação de drywall, divisórias, nichos, forros de gesso, sancas modernas e acabamento sofisticado.
+      </p>
+    </div><div class="service">
+  <h3>Elétrica e LED</h3>
+  <p>
+    Instalações elétricas, spots LED, fitas LED, iluminação moderna e quadros elétricos.
+  </p>
 </div>
 
-<div class="sublogo">
-Gesso, Drywall e Elétrica Profissional em Botucatu e Região
+<div class="service">
+  <h3>Pintura e Acabamento</h3>
+  <p>
+    Pintura residencial, massa corrida, acabamento fino e valorização do ambiente.
+  </p>
 </div>
 
-</header>
-
-<section class="hero">
-
-<h1>
-Transforme Seu Ambiente com Acabamento Profissional
-</h1>
-
-<p>
-Especialistas em drywall, sancas, forros, elétrica residencial, LED e acabamento moderno para residências e empresas.
-</p>
-
-<a class="btn" href="https://wa.me/5511983316372">
-SOLICITAR ORÇAMENTO
-</a>
-
-</section>
-
-<section class="stats">
-
-<div class="stat">
-<h2>+100</h2>
-<p>Serviços Realizados</p>
+<div class="service">
+  <h3>Forros e Sancas</h3>
+  <p>
+    Projetos modernos para sala, cozinha, quarto e ambientes comerciais.
+  </p>
 </div>
 
-<div class="stat">
-<h2>100%</h2>
-<p>Acabamento Profissional</p>
+<div class="service">
+  <h3>Reformas Residenciais</h3>
+  <p>
+    Soluções completas em acabamento, elétrica, drywall e modernização de ambientes.
+  </p>
 </div>
 
-<div class="stat">
-<h2>Rápido</h2>
-<p>Atendimento via WhatsApp</p>
+<div class="service">
+  <h3>Orçamento Rápido</h3>
+  <p>
+    Envie fotos pelo WhatsApp e receba atendimento rápido sem compromisso.
+  </p>
 </div>
 
-<div class="stat">
-<h2>Botucatu</h2>
-<p>Atendimento Regional</p>
-</div>
-
-</section>
-
-<section class="services">
-
-<h2 class="section-title">
-Nossos Serviços
-</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Gesso e Drywall</h3>
-<p>
-Sancas, forros, divisórias, nichos, drywall moderno e acabamento sofisticado para residências e empresas.
-</p>
+  </div>
+</section><section class="section about">
+  <h2 class="section-title">Por Que Escolher a Drywall Victorino?</h2>  <p>
+    Trabalhamos com foco em qualidade, acabamento premium, atendimento rápido e transparência.
+    Nosso objetivo é transformar ambientes residenciais e comerciais com visual moderno e profissional.
+  </p>  <div class="mission-values">
+    <div class="card">
+      <h3>Missão</h3>
+      <p>
+        Entregar soluções modernas em drywall, gesso e elétrica com qualidade profissional e atendimento rápido.
+      </p>
+    </div><div class="card">
+  <h3>Visão</h3>
+  <p>
+    Ser referência em acabamento e drywall em Botucatu e região através da excelência e confiança.
+  </p>
 </div>
 
 <div class="card">
-<h3>Elétrica e LED</h3>
-<p>
-Instalação elétrica residencial, spots, fitas LED, quadros elétricos e iluminação moderna.
-</p>
+  <h3>Valores</h3>
+  <p>
+    Compromisso, honestidade, qualidade, pontualidade e respeito ao cliente.
+  </p>
 </div>
 
-<div class="card">
-<h3>Pintura e Acabamento</h3>
-<p>
-Pintura profissional, massa corrida e acabamento fino para deixar seu ambiente valorizado.
-</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="benefits">
-
-<h2 class="section-title">
-Por Que Escolher a Victorino?
-</h2>
-
-<div class="benefit-grid">
-
-<div class="benefit">
-<h4>Atendimento Rápido</h4>
-<p>Resposta imediata pelo WhatsApp.</p>
-</div>
-
-<div class="benefit">
-<h4>Acabamento Premium</h4>
-<p>Visual moderno e profissional.</p>
-</div>
-
-<div class="benefit">
-<h4>Equipe Especializada</h4>
-<p>Experiência em drywall, gesso e elétrica.</p>
-</div>
-
-<div class="benefit">
-<h4>Preço Justo</h4>
-<p>Qualidade com excelente custo-benefício.</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="cta">
-
-<h2>
-Solicite Seu Orçamento Agora
-</h2>
-
-<p>
-Atendemos Botucatu e região com serviços profissionais de gesso, drywall e elétrica.
-</p>
-
-<a class="btn" href="https://wa.me/5511983316372">
-CHAMAR NO WHATSAPP
-</a>
-
-</section>
-
-<footer>
-
-<p>
-Drywall Victorino © 2026 | Gesseiro e Eletricista em Botucatu
-</p>
-
-</footer>
-
-<a class="whatsapp" href="https://wa.me/5511983316372">
-✆
-</a>
-
-</body>
+  </div>
+</section><section class="section about">
+  <h2 class="section-title">Atendimento em Botucatu e Região</h2>  <p>
+    Atendemos Botucatu, São Manuel, Pardinho, Avaré, Bofete e cidades próximas.
+    Solicite agora seu orçamento de drywall, gesso, elétrica ou pintura.
+  </p>  <a class="cta" href="https://api.whatsapp.com/send?phone=5511983316372&text=Olá,%20quero%20um%20orçamento">
+    Falar com Especialista
+  </a>
+</section><footer>
+  <h2>Drywall Victorino</h2>
+  <p>Gesso, Drywall e Elétrica Profissional em Botucatu</p>
+  <p>WhatsApp: (11) 98331-6372</p>
+  <p>© 2026 - Todos os direitos reservados</p>
+</footer><a class="whatsapp-float" href="https://api.whatsapp.com/send?phone=5511983316372&text=Olá,%20quero%20um%20orçamento">
+  ✆
+</a></body>
 </html>
