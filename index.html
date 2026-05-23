@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drywall em Botucatu | Gesso, Forro PVC, Elétrica e Pintura</title>
-    <meta name="description" content="Drywall, gesso, forro PVC, elétrica residencial, pintura e acabamento profissional em Botucatu, São Manuel, Pardinho, Avaré e região.">
+    <title>Drywall em Botucatu | Gesso, Forro PVC e Elétrica | Drywall Victorino</title>
+    <meta name="description" content="Drywall, gesso, forro PVC, divisórias, sancas e elétrica residencial em Botucatu, São Manuel, Pardinho, Avaré e região.">
     
+    <link rel="icon" type="image/png" href="imagens/favicon.png">
+
+    <meta name="google-site-verification" content="CODIGO_DO_SEARCH_CONSOLE">
+
+    <meta property="og:title" content="Drywall em Botucatu | Drywall Victorino">
+    <meta property="og:description" content="Drywall, Gesso, Forro PVC e Elétrica em Botucatu e Região">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://drywallvictorino.com.br">
+    <meta property="og:image" content="https://drywallvictorino.com.br/imagens/capa.jpg">
+
+    <link rel="canonical" href="https://drywallvictorino.com.br/">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-13187133953"></script>
+    <script>
+      window.dataLayer = window.dataLayer ||;
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-13187133953');
+    </script>
+
+    <script>
+      function dispararConversaoWhatsApp() {
+        if (typeof gtag === 'function') {
+          gtag('event', 'conversion', {
+            'send_to': 'AW-13187133953/LABEL_DE_CONVERSAO'
+          });
+        }
+      }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Drywall Victorino",
+      "url": "https://drywallvictorino.com.br",
+      "telephone": "+5511983316372",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Botucatu",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "areaServed": "Botucatu e região"
+    }
+    </script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <style>
@@ -39,7 +86,7 @@
         }
 
         /* CONTAINER PADRÃO */
-       .container {
+      .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
@@ -60,7 +107,7 @@
             letter-spacing: 1px;
         }
 
-        /* 1. HEADER (Cabeçalho de Conversão) */
+        /* 1. HEADER (Cabeçalho de Conversão corrigido) */
         header {
             background-color: rgba(0, 0, 0, 0.95);
             border-bottom: 1px solid var(--cor-borda);
@@ -76,20 +123,20 @@
             align-items: center;
         }
 
-       .logo h1 {
+      .logo h1 {
             color: var(--cor-primaria);
             font-size: 1.5rem;
             font-weight: 800;
             letter-spacing: 1.5px;
         }
 
-       .logo p {
+      .logo p {
             font-size: 0.75rem;
             color: var(--cor-texto-mutado);
             text-transform: uppercase;
         }
 
-       .header-contato a {
+      .header-contato a {
             background-color: var(--cor-primaria);
             color: #000000;
             padding: 10px 18px;
@@ -99,32 +146,32 @@
             transition: 0.3s;
         }
 
-       .header-contato a:hover {
+      .header-contato a:hover {
             opacity: 0.9;
         }
 
         /* 2. HERO SECTION (Topo de Alto Impacto) */
-       .hero {
+      .hero {
             padding: 80px 0;
             text-align: center;
             background: linear-gradient(180deg, #050505 0%, #000000 100%);
         }
 
-       .hero h2 {
+      .hero h2 {
             color: var(--cor-texto);
             font-size: 2.5rem;
             margin-bottom: 15px;
             text-transform: none;
         }
 
-       .hero p {
+      .hero p {
             font-size: 1.1rem;
             color: var(--cor-texto-mutado);
             max-width: 800px;
             margin: 0 auto 35px auto;
         }
 
-       .btn-cta {
+      .btn-cta {
             display: inline-block;
             background-color: var(--cor-whatsapp);
             color: #ffffff;
@@ -136,13 +183,13 @@
             box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
         }
 
-       .btn-cta:hover {
+      .btn-cta:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
         }
 
         /* 3. SOBRE NÓS */
-       .sobre-card {
+      .sobre-card {
             background-color: var(--cor-card);
             border: 1px solid var(--cor-borda);
             border-radius: 8px;
@@ -152,25 +199,25 @@
             box-shadow: 0 4px 10px rgba(0,0,0,0.5);
         }
 
-       .sobre-card p {
+      .sobre-card p {
             font-size: 1.05rem;
             line-height: 1.8;
             margin-bottom: 15px;
             color: #f1f1f1;
         }
 
-       .sobre-card p:last-child {
+      .sobre-card p:last-child {
             margin-bottom: 0;
         }
 
-        /* 4. SERVIÇOS (Grid Sem Quebras) */
-       .grid-servicos {
+        /* 4. SERVIÇOS (Grid Otimizada para 4 Serviços) */
+      .grid-servicos {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 25px;
         }
 
-       .card {
+      .card {
             background-color: var(--cor-card);
             border: 1px solid var(--cor-borda);
             border-radius: 8px;
@@ -178,36 +225,36 @@
             transition: transform 0.3s ease, border-color 0.3s ease;
         }
 
-       .card:hover {
+      .card:hover {
             transform: translateY(-5px);
             border-color: var(--cor-primaria);
         }
 
-       .card img {
+      .card img {
             width: 100%;
             height: 200px;
             object-fit: cover;
             border-bottom: 1px solid var(--cor-borda);
         }
 
-       .card-content {
+      .card-content {
             padding: 20px;
         }
 
-       .card-content h3 {
+      .card-content h3 {
             color: var(--cor-primaria);
             font-size: 1.25rem;
             margin-bottom: 10px;
         }
 
-       .card-content p {
+      .card-content p {
             color: var(--cor-texto-mutado);
             font-size: 0.95rem;
             line-height: 1.5;
         }
 
         /* 5. CIDADES ATENDIDAS */
-       .cidades-box {
+      .cidades-box {
             background-color: var(--cor-card);
             border: 1px solid var(--cor-borda);
             border-radius: 8px;
@@ -215,20 +262,20 @@
             text-align: center;
         }
 
-       .cidades-box p {
+      .cidades-box p {
             font-size: 1.1rem;
             line-height: 1.8;
             color: #f1f1f1;
         }
 
         /* 6. DEPOIMENTOS */
-       .grid-depoimentos {
+      .grid-depoimentos {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 25px;
         }
 
-       .depoimento-card {
+      .depoimento-card {
             background-color: var(--cor-card);
             border: 1px solid var(--cor-borda);
             border-radius: 8px;
@@ -236,7 +283,7 @@
             position: relative;
         }
 
-       .depoimento-card::before {
+      .depoimento-card::before {
             content: "“";
             font-size: 5rem;
             color: rgba(244, 196, 0, 0.1);
@@ -246,7 +293,7 @@
             font-family: serif;
         }
 
-       .depoimento-card p {
+      .depoimento-card p {
             font-style: italic;
             color: #e0e0e0;
             margin-bottom: 15px;
@@ -254,14 +301,14 @@
             z-index: 1;
         }
 
-       .depoimento-autor {
+      .depoimento-autor {
             color: var(--cor-primaria);
             font-weight: bold;
             font-size: 0.9rem;
         }
 
         /* 7. FAQ (Perguntas Frequentes) */
-       .faq-grid {
+      .faq-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 25px;
@@ -269,20 +316,20 @@
             margin: 0 auto;
         }
 
-       .faq-item {
+      .faq-item {
             background-color: var(--cor-card);
             border: 1px solid var(--cor-borda);
             border-radius: 8px;
             padding: 20px;
         }
 
-       .faq-item h3 {
+      .faq-item h3 {
             color: var(--cor-primaria);
             font-size: 1.05rem;
             margin-bottom: 10px;
         }
 
-       .faq-item p {
+      .faq-item p {
             color: var(--cor-texto-mutado);
             font-size: 0.9rem;
             line-height: 1.6;
@@ -318,7 +365,7 @@
         }
 
         /* 9. BOTÃO WHATSAPP FLUTUANTE */
-       .whatsapp-floating {
+      .whatsapp-floating {
             position: fixed;
             bottom: 25px;
             right: 25px;
@@ -336,13 +383,13 @@
             transition: transform 0.3s ease;
         }
 
-       .whatsapp-floating:hover {
+      .whatsapp-floating:hover {
             transform: scale(1.1);
         }
 
-        /* RESPONSIVIDADE ADICIONAL */
+        /* RESPONSIVIDADE (Corrigida) */
         @media (max-width: 768px) {
-           .hero h2 {
+          .hero h2 {
                 font-size: 2rem;
             }
             header.container {
@@ -359,10 +406,10 @@
         <div class="container">
             <div class="logo">
                 <h1>DRYWALL VICTORINO</h1>
-                <p>Drywall, Gesso, Forro PVC, Elétrica e Pintura</p>
+                <p>Drywall, Gesso, Forro PVC e Elétrica</p>
             </div>
             <div class="header-contato">
-                <a href="https://wa.me/5511983316372?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20sem%20compromisso." target="_blank">
+                <a href="https://wa.me/5511983316372?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20sem%20compromisso%20para%20minha%20obra." target="_blank" onclick="dispararConversaoWhatsApp()">
                     <i class="fab fa-whatsapp"></i> (11) 98331-6372
                 </a>
             </div>
@@ -373,8 +420,8 @@
         <section class="hero">
             <div class="container">
                 <h2>Transforme Seu Ambiente com Acabamento Profissional</h2>
-                <p>Especialistas em drywall, gesso decorativo, forro PVC, elétrica residencial, pintura e impermeabilização. Atendimento completo com foco em organização e qualidade em Botucatu e região.</p>
-                <a href="https://wa.me/5511983316372?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20sem%20compromisso." target="_blank" class="btn-cta">
+                <p>Especialistas em drywall, gesso decorativo, forro PVC, divisórias, sancas e elétrica residencial em Botucatu e região. Atendimento completo com foco em organização e qualidade.</p>
+                <a href="https://wa.me/5511983316372?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20sem%20compromisso%20para%20minha%20obra." target="_blank" onclick="dispararConversaoWhatsApp()" class="btn-cta">
                     Solicitar Orçamento no WhatsApp
                 </a>
             </div>
@@ -384,8 +431,8 @@
             <div class="container">
                 <h2>Sobre a Drywall Victorino</h2>
                 <div class="sobre-card">
-                    <p>A Drywall Victorino atua em Botucatu e região oferecendo soluções de altíssimo padrão em drywall, gesso decorativo, forros de PVC, elétrica integrada, pintura técnica e impermeabilização comercial e residencial.</p>
-                    <p>O nosso maior diferencial é o profissionalismo: além de trabalhar com materiais certificados e mão de obra altamente especializada, temos o compromisso inegociável de entregar a sua obra **totalmente limpa e dentro do prazo combinado**.</p>
+                    <p>A Drywall Victorino atua em Botucatu e região oferecendo soluções de altíssimo padrão em drywall, gesso decorativo, forros de PVC, divisórias, sancas e elétrica residencial para clientes residenciais e comerciais.</p>
+                    <p>O nosso maior diferencial é o profissionalismo: além de trabalhar com materiais de excelente durabilidade e equipe especializada, temos o compromisso inegociável de entregar a sua obra <strong>totalmente limpa e dentro do prazo combinado</strong>.</p>
                     <p>Facilitamos o processo de orçamento e atendimento em um raio de até 70 km de Botucatu-SP, garantindo suporte completo do projeto até o acabamento de iluminação fina.</p>
                 </div>
             </div>
@@ -397,7 +444,7 @@
                 <div class="grid-servicos">
                     
                     <div class="card">
-                        <img src="imagens/gesso.jfif" alt="Instalação de Forro PVC">
+                        <img src="imagens/gesso.jfif" alt="Forro PVC instalado em Botucatu">
                         <div class="card-content">
                             <h3>Forro PVC</h3>
                             <p>Instalação de forro PVC moderno, resistente e fácil de limpar. Ideal para áreas que buscam praticidade e imunidade contra umidade.</p>
@@ -405,7 +452,7 @@
                     </div>
 
                     <div class="card">
-                        <img src="imagens/gesso3.jfif" alt="Drywall e Divisórias">
+                        <img src="imagens/gesso3.jfif" alt="Divisória de Drywall em Botucatu">
                         <div class="card-content">
                             <h3>Drywall e Divisórias</h3>
                             <p>Paredes, nichos, sancas e divisórias modernas para ambientes residenciais e comerciais. Otimização rápida de espaço sem sujeira.</p>
@@ -413,7 +460,7 @@
                     </div>
 
                     <div class="card">
-                        <img src="imagens/gesso_decorativo.jfif" alt="Forro e Sancas de Gesso">
+                        <img src="imagens/gesso_decorativo.jfif" alt="Sanca de Gesso com LED em Botucatu">
                         <div class="card-content">
                             <h3>Forro e Sancas de Gesso</h3>
                             <p>Projetos decorativos com acabamento profissional e sancas modernas de gesso sob medida para valorizar a arquitetura do seu ambiente.</p>
@@ -421,26 +468,10 @@
                     </div>
 
                     <div class="card">
-                        <img src="imagens/eletrica.jfif" alt="Elétrica Residencial">
+                        <img src="imagens/eletrica.jfif" alt="Instalação Elétrica Residencial em Botucatu">
                         <div class="card-content">
                             <h3>Elétrica Residencial</h3>
-                            <p>Instalação completa de fiação segura, quadros de distribuição, spots de LED e fitas de LED embutidas no gesso para um efeito elegante.</p>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="imagens/pintura.jfif" alt="Pintura e Acabamento">
-                        <div class="card-content">
-                            <h3>Pintura e Acabamento</h3>
-                            <p>Trabalho fino de preparação de superfícies com massa corrida e pintura interna/externa de qualidade, garantindo paredes lisas e perfeitas.</p>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="imagens/impermeabilizacao.jfif" alt="Impermeabilização">
-                        <div class="card-content">
-                            <h3>Impermeabilização</h3>
-                            <p>Proteção rigorosa contra infiltrações, manchas, bolores e umidade de fundações ao teto, garantindo a durabilidade do seu drywall e pintura.</p>
+                            <p>Instalação completa de fiação segura, quadros de distribuição, spots de LED e fitas de LED embutidas no gesso para um efeito elegante de iluminação.</p>
                         </div>
                     </div>
 
@@ -498,7 +529,7 @@
                     </div>
                     <div class="faq-item">
                         <h3>Como funciona a limpeza pós-obra?</h3>
-                        <p>Um dos nossos maiores pilares é o respeito pela sua casa ou comércio. Ao finalizar o trabalho de gesso e pintura, removemos todos os resíduos de drywall e deixamos o ambiente varrido e pronto.</p>
+                        <p>Um dos nossos maiores pilares é o respeito pela sua casa ou comércio. Ao finalizar o trabalho de gesso e fiação, removemos todos os resíduos de gesso/drywall e deixamos o ambiente limpo.</p>
                     </div>
                 </div>
             </div>
@@ -508,6 +539,7 @@
     <footer>
         <div class="container">
             <h3>Drywall Victorino</h3>
+            <p>Especialistas em Drywall, Gesso, Forro PVC, Divisórias e Elétrica Residencial em Botucatu e Região.</p>
             <p>Atendimento em Botucatu - SP e região (raio de até 70 km)</p>
             <p>WhatsApp: (11) 98331-6372</p>
             <p style="margin-top: 15px; font-size: 0.8rem;">© 2026 Todos os direitos reservados.</p>
@@ -517,7 +549,7 @@
         </div>
     </footer>
 
-    <a href="https://wa.me/5511983316372?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20sem%20compromisso." class="whatsapp-floating" target="_blank">
+    <a href="https://wa.me/5511983316372?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20sem%20compromisso%20para%20minha%20obra." class="whatsapp-floating" target="_blank" onclick="dispararConversaoWhatsApp()">
         <i class="fab fa-whatsapp"></i>
     </a>
 
