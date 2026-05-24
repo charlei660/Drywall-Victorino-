@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drywall em Botucatu | Forro PVC, Gesso e Eletricista | Drywall Victorino</title>
     <meta name="description" content="Drywall, gesso, forro PVC, sancas e elétrica em Botucatu, São Manuel, Pardinho, Avaré e Lençóis Paulista.">
-    <!-- SUBSTITUA PELO SEU CÓDIGO REAL DO SEARCH CONSOLE -->
     <meta name="google-site-verification" content="COLOQUE_SEU_CODIGO_AQUI">
     
     <link rel="canonical" href="https://drywallvictorino.com.br/">
+    <link rel="icon" type="image/png" href="imagens/favicon.png">
     
     <script async src="https://www.googletagmanager.com/gtag/js?id=GT-WRF79ZQR"></script>
     <script>
@@ -16,114 +16,90 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'GT-WRF79ZQR');
-        gtag('config', 'AW-18137133953');
+        gtag('config', 'AW-13187133953');
 
-        function gtag_report_conversion(url) {
-          // SUBSTITUA PELA SUA ETIQUETA REAL (EX: AW-18137133953/AbCdEf...)
-          gtag('event', 'conversion', { 'send_to': 'AW-18137133953/SUA_ETIQUETA_REAL_AQUI' });
+        function gtag_report_conversion() {
+          gtag('event', 'conversion', { 'send_to': 'AW-13187133953/SUA_ETIQUETA_REAL_AQUI' });
           return true;
         }
     </script>
     
-    <!-- Schema LocalBusiness -->
-    <script type="application/ld+json">
-    {
-      "@context":"https://schema.org",
-      "@type":"LocalBusiness",
-      "name":"Drywall Victorino",
-      "url":"https://drywallvictorino.com.br",
-      "telephone":"+5511983316372",
-      "email":"contato@drywallvictorino.com.br",
-      "address":{
-        "@type":"PostalAddress",
-        "addressLocality":"Botucatu",
-        "addressRegion":"SP",
-        "addressCountry":"BR"
-      },
-      "image":"https://drywallvictorino.com.br/imagens/capa.jpg",
-      "priceRange":"$$",
-      "description":"Drywall, Forro PVC, Gesso, Sancas e Elétrica em Botucatu e região.",
-      "areaServed":[{"@type":"City","name":"Botucatu"},{"@type":"City","name":"São Manuel"},{"@type":"City","name":"Pardinho"},{"@type":"City","name":"Avaré"},{"@type":"City","name":"Lençóis Paulista"}],
-      "serviceType":["Drywall","Forro PVC","Gesso","Eletricista"]
-    }
-    </script>
-
-    <!-- Schema FAQPage -->
-    <script type="application/ld+json">
-    {
-     "@context":"https://schema.org",
-     "@type":"FAQPage",
-     "mainEntity":[
-      {
-       "@type":"Question",
-       "name":"Quanto custa trocar um disjuntor?",
-       "acceptedAnswer":{"@type":"Answer","text":"O valor varia conforme a necessidade e instalação."}
-      },
-      {
-       "@type":"Question",
-       "name":"Vocês fazem instalação de spots LED?",
-       "acceptedAnswer":{"@type":"Answer","text":"Sim, realizamos a instalação completa."}
-      }
-     ]
-    }
-    </script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
     <style>
-        body{margin:0;background:#000;color:#fff;font-family:Arial,sans-serif;line-height:1.6;}
-        header{display:flex;justify-content:space-between;align-items:center;padding:15px 20px;background:#111;position:sticky;top:0;z-index:1000;flex-wrap:wrap;}
-        nav{display:flex;flex-wrap:wrap;justify-content:center;}
-        nav a{color:#fff;margin:0 10px;text-decoration:none;font-weight:bold;font-size:0.9rem;}
-        section{padding:60px 20px;max-width:900px;margin:auto;}
-        img{max-width:100%;height:auto;border-radius:10px;margin-bottom:15px;display:block;}
-        .btn-cta{display:inline-block;background:#25d366;color:#fff;padding:15px 30px;border-radius:6px;text-decoration:none;font-weight:bold;margin-top:20px;border:none;cursor:pointer;}
-        .btn-ligar{background:#f4c400;color:#000;padding:15px 30px;border-radius:6px;text-decoration:none;font-weight:bold;margin-top:20px;display:inline-block;}
-        .whatsapp-floating{position:fixed;bottom:25px;right:25px;background:#25d366;color:#fff;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:30px;z-index:1000;}
-        #galeria{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px;}
-        #galeria img{width:100%;height:250px;object-fit:cover;}
+        :root { --cor-primaria: #f4c400; --cor-whatsapp: #25d366; }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: sans-serif; scroll-behavior: smooth; }
+        body { background: #000; color: #fff; line-height: 1.6; }
+        
+        header { padding: 20px; text-align: center; border-bottom: 1px solid #333; position: sticky; top: 0; background: #000; z-index: 1000; }
+        nav a { color: #fff; margin: 0 10px; text-decoration: none; font-weight: bold; }
+        
+        main { max-width: 900px; margin: auto; padding: 20px; }
+        section { padding: 50px 0; border-bottom: 1px solid #222; }
+        h2 { color: var(--cor-primaria); margin-bottom: 20px; text-align: center; }
+        
+        .btn { display: inline-block; padding: 15px 30px; margin: 5px; border-radius: 6px; text-decoration: none; font-weight: bold; text-align: center; }
+        .btn-whats { background: var(--cor-whatsapp); color: #fff; }
+        .btn-ligar { background: var(--cor-primaria); color: #000; }
+        
+        #galeria { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; }
+        #galeria img { width: 100%; height: 250px; object-fit: cover; border-radius: 8px; }
+        
+        .whatsapp-floating { position: fixed; bottom: 25px; right: 25px; background: var(--cor-whatsapp); color: #fff; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; z-index: 1000; }
+        footer { text-align: center; padding: 30px; color: #666; font-size: 0.9rem; }
     </style>
 </head>
 <body>
+
     <header>
-        <div class="logo"><strong>Drywall Victorino</strong></div>
+        <div style="font-size: 1.5rem; margin-bottom: 10px;"><strong>Drywall Victorino</strong></div>
         <nav>
             <a href="#drywall">Drywall</a>
             <a href="#pvc">PVC</a>
             <a href="#gesso">Gesso</a>
             <a href="#eletrica">Elétrica</a>
         </nav>
-        <a href="https://wa.me/5511983316372?text=Olá,%20vim%20pelo%20site%20Drywall%20Victorino%20e%20gostaria%20de%20um%20orçamento." class="btn-cta" onclick="gtag_report_conversion()" target="_blank">Orçamento</a>
     </header>
 
     <main>
-        <section class="hero" style="text-align:center;">
-            <h1>Drywall, Forro PVC, Gesso e Eletricista em Botucatu e Região</h1>
-            <p>Especialistas em reformas, acabamento profissional e elétrica residencial.</p>
-            <a href="https://wa.me/5511983316372?text=Olá,%20vim%20pelo%20site%20Drywall%20Victorino%20e%20gostaria%20de%20um%20orçamento." class="btn-cta" onclick="gtag_report_conversion()" target="_blank">Solicitar Orçamento Agora</a>
-            <br>
-            <a href="tel:+5511983316372" class="btn-ligar">Ligar Agora</a>
+        <section style="text-align: center;">
+            <h1>Drywall, Forro PVC, Gesso e Eletricista em Botucatu</h1>
+            <p style="margin: 20px 0;">Especialistas em reformas, acabamento profissional e elétrica residencial.</p>
+            <a href="https://wa.me/5511983316372" class="btn btn-whats" onclick="gtag_report_conversion()">Solicitar Orçamento</a>
+            <a href="tel:+5511983316372" class="btn btn-ligar">Ligar Agora</a>
         </section>
 
-        <section id="drywall"><h2>Drywall em Botucatu</h2><p>Divisórias e forros de alto padrão.</p><a href="https://wa.me/5511983316372?text=Olá,%20vim%20pelo%20site%20Drywall%20Victorino%20e%20gostaria%20de%20um%20orçamento%20de%20Drywall" class="btn-cta" onclick="gtag_report_conversion()" target="_blank">Solicitar Orçamento</a></section>
-        
+        <section id="drywall">
+            <h2>Drywall em Botucatu</h2>
+            <p>Divisórias e forros de alto padrão para sua residência ou comércio.</p>
+        </section>
+
+        <section id="pvc">
+            <h2>Forro PVC</h2>
+            <p>Instalação de forros de PVC branco e amadeirado. Praticidade e durabilidade.</p>
+        </section>
+
         <section id="galeria">
             <h2>Galeria de Obras</h2>
-            <img src="forro-pvc-botucatu.webp" alt="Forro PVC em Botucatu">
-            <img src="drywall-residencial-botucatu.webp" alt="Drywall residencial em Botucatu">
+            <img src="forro-pvc-botucatu.webp" alt="Forro PVC">
+            <img src="drywall-residencial-botucatu.webp" alt="Drywall">
+            <img src="sanca-gesso-botucatu.webp" alt="Gesso">
+            <img src="instalacao-eletrica-botucatu.webp" alt="Elétrica">
         </section>
 
         <section id="contato">
             <h2>Contato</h2>
-            <p>WhatsApp: (11) 98331-6372</p>
+            <p>WhatsApp: <strong>(11) 98331-6372</strong></p>
             <p>Atendimento profissional em Botucatu-SP e toda a região.</p>
         </section>
     </main>
 
-    <footer style="text-align:center;padding:30px;">
+    <footer>
         <p>© 2026 Drywall Victorino - Todos os direitos reservados</p>
+        <p>Botucatu - SP | São Manuel | Pardinho | Avaré | Lençóis Paulista</p>
     </footer>
 
-    <a href="https://wa.me/5511983316372?text=Olá,%20vim%20pelo%20site%20Drywall%20Victorino%20e%20gostaria%20de%20um%20orçamento." class="whatsapp-floating" onclick="gtag_report_conversion()" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    <a href="https://wa.me/5511983316372" class="whatsapp-floating" onclick="gtag_report_conversion()"><i class="fab fa-whatsapp"></i></a>
+
 </body>
 </html>
