@@ -57,13 +57,15 @@
     </script>
 
     <script>
-      function dispararConversaoWhatsApp() {
-        if (typeof gtag === 'function') {
-          gtag('event', 'conversion', {
-          EKMnCNK2obUcEIHnushD
-          });
-        }
-      }
+   function dispararConversaoWhatsApp() {
+  console.log('Conversão disparada');
+
+  if (typeof gtag === 'function') {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-18137133953/EKMnCNK2obUcEIHnushD'
+    });
+  }
+}
     </script>
 
     <script type="application/ld+json">
