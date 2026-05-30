@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,10 +8,10 @@
     <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="theme-color" content="#0056b3">
 
-    <!-- 1. Canonical correto -->
+    <!-- 1. URL CANONICAL DEFINITIVA (Alinhada com o sitemap) -->
     <link rel="canonical" href="https://drywallvictorino.com.br/eletricista-botucatu/">
 
-    <!-- 2. Open Graph correto -->
+    <!-- 2. OPEN GRAPH TAGS CORRIGIDAS -->
     <meta property="og:title" content="Eletricista em Botucatu | Drywall Victorino">
     <meta property="og:description" content="Instalação elétrica, manutenção, troca de disjuntores, chuveiros e iluminação em Botucatu.">
     <meta property="og:type" content="website">
@@ -18,10 +20,9 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 
-    <!-- Favicon -->
+    <!-- Favicon Corrigido -->
     <link rel="icon" type="image/png" href="logo.png">
 
-    <!-- Estilos CSS Otimizados -->
     <style>
         body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.8; color: #333; margin: 0; padding: 0; }
         header { background: #0056b3; color: #ffffff; padding: 4rem 1rem; text-align: center; }
@@ -63,25 +64,43 @@
         .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
     </style>
 
-    <!-- 3. Schema Electrician correto -->
+    <!-- 3. SCHEMA LOCALBUSINESS + ELECTRICIAN CORRIGIDO -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Electrician",
+      "@type": ["LocalBusiness", "Electrician"],
       "name": "Drywall Victorino",
+      "telephone": "+5511983316372",
+      "image": "https://drywallvictorino.com.br/imagens/eletrica.png",
+      "priceRange": "$$",
       "url": "https://drywallvictorino.com.br/eletricista-botucatu/",
-      "telephone": "+55 11 98331-6372",
-      "areaServed": "Botucatu, SP",
+      "areaServed": [
+        {"@type": "AdministrativeArea", "name": "Botucatu"},
+        {"@type": "AdministrativeArea", "name": "São Manuel"},
+        {"@type": "AdministrativeArea", "name": "Pardinho"},
+        {"@type": "AdministrativeArea", "name": "Pratânia"},
+        {"@type": "AdministrativeArea", "name": "Itatinga"}
+      ],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -22.8837,
+        "longitude": -48.4437
+      },
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Botucatu",
         "addressRegion": "SP",
         "addressCountry": "BR"
-      }
+      },
+      "openingHours": "Mo-Sa 08:00-18:00",
+      "sameAs": [
+        "https://www.facebook.com/drywallvictorino",
+        "https://www.instagram.com/drywallvictorino"
+      ]
     }
     </script>
 
-    <!-- Schema BreadcrumbList ajustado para a nova URL -->
+    <!-- 4. SCHEMA BREADCRUMB CORRIGIDO -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -103,7 +122,7 @@
     }
     </script>
 
-    <!-- Schema FAQPage -->
+    <!-- 5. SCHEMA FAQPAGE -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -145,3 +164,126 @@
     }
     </script>
 </head>
+<body>
+
+<!-- Botão Flutuante do WhatsApp -->
+<a href="https://api.whatsapp.com/send?phone=5511983316372&text=Olá%2C%20gostaria%20de%20um%20orçamento%20para%20serviços%20elétricos%20em%20Botucatu." class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+    <span>📞</span>
+    <span class="sr-only">Falar com eletricista no WhatsApp</span>
+</a>
+
+<header>
+    <h1>Eletricista em Botucatu e Região</h1>
+    <p>Segurança, Normas Técnicas (NBR 5410) e Qualidade em Serviços Elétricos</p>
+</header>
+
+<main class="container">
+    <section>
+        <h2>Especialista em Instalações, Reformas e Reparos Elétricos</h2>
+        <p>A rede elétrica de um imóvel é o coração da sua infraestrutura e exige mão de obra altamente qualificada. Na <strong>Drywall Victorino</strong>, executamos serviços elétricos residenciais, comerciais e prediais seguindo rigorosamente as diretrizes da norma <strong>NBR 5410</strong>. Garantimos a total segurança do seu patrimônio, eliminando o risco de sobrecargas e fiações mal dimensionadas.</p>
+        
+        <!-- Malha de Links Internos (Silo Structure) -->
+        <div class="link-interno">
+            <p>
+                <strong>Planejando uma reforma?</strong> Também oferecemos profissionais especializados em 
+                <a href="/gesseiro/botucatu/">serviços de gesso</a>, 
+                <a href="/drywall/botucatu/">instalação de drywall</a> e 
+                <a href="/pintor/botucatu/">pintura residencial</a> em toda a região de Botucatu.
+            </p>
+        </div>
+
+        <!-- Imagem de Destaque Corrigida -->
+        <img src="https://drywallvictorino.com.br/imagens/eletrica.png" 
+             alt="Eletricista profissional realizando instalação elétrica residencial em Botucatu" 
+             loading="lazy" 
+             width="1200" 
+             height="800" 
+             class="img-responsiva">
+
+        <div style="text-align: center; margin: 30px 0;">
+            <a href="https://api.whatsapp.com/send?phone=5511983316372&text=Olá%2C%20vi%20o%20site%20e%20gostaria%20de%20um%20orçamento%20elétrico." class="btn-whats" target="_blank" rel="noopener noreferrer">Solicitar Orçamento Grátis via WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Conteúdo Expandido Localizado -->
+    <section>
+        <h2>Eletricista Residencial em Botucatu</h2>
+        <p>A fiação de uma residência desgasta-se naturalmente com o passar dos anos. O aumento do uso de eletrodomésticos modernos exige uma revisão completa do sistema. Atuamos na identificação preventiva de falhas ocultas, substituição de fiação antiga por condutores de cobre normatizados, instalação de tomadas adicionais nos padrões corretos de amperagem (10A e 20A) e modernização geral para garantir que seus equipamentos funcionem sem quedas de tensão.</p>
+
+        <h2>Eletricista Comercial em Botucatu</h2>
+        <p>Comércios e escritórios possuem dinâmicas elétricas complexas que necessitam de distribuição equilibrada de cargas. Falhas na rede comercial podem paralisar computadores, sistemas de refrigeração e maquinários, gerando prejuízos financeiros. Desenvolvemos infraestruturas elétricas dedicadas para CPDs, circuitos estabilizados para computadores, iluminação técnica em LED para fachadas e salões de atendimento, além de manutenções preventivas programadas para não interferir no horário de funcionamento do seu negócio.</p>
+
+        <h2>Troca de Padrão CPFL</h2>
+        <p>O padrão de entrada de energia é a interface entre a concessionária de energia e o seu imóvel. Se o seu padrão atual é antigo (como caixas de ferro) ou se você precisa aumentar a carga de monofásico para bifásico ou trifásico devido à instalação de novos aparelhos de ar-condicionado, realizamos a adequação técnica completa exigida pela <strong>CPFL Paulista</strong>. Montamos e instalamos o novo padrão de concreto homologado, emitindo os laudos necessários para a rápida liberação do fornecimento.</p>
+
+        <h2>Instalação de Chuveiros</h2>
+        <p>O chuveiro elétrico é um dos itens que mais consomem corrente em um ambiente residencial. A instalação incorreta ou a substituição de um modelo simples por um chuveiro de alta potência sem a devida troca dos fios pode derreter isolamentos e causar princípios de incêndio. Nós calculamos a bitola correta do cabo (ex: 4mm², 6mm² ou 10mm²) e instalamos o disjuntor correto para o modelo escolhido, proporcionando banhos confortáveis e sem desarmes indesejados no meio do inverno.</p>
+
+        <h2>Troca de Disjuntores</h2>
+        <p>Disjuntores antigos do tipo "Preto" (NEMA) perdem a eficiência de calibração térmica com o tempo, falhando no momento de proteger a sua casa contra sobrecargas. Substituímos esses modelos antigos pelos modernos disjuntores padrão DIN (Brancos), que possuem tempo de resposta muito mais ágil. Além disso, organizamos e etiquetamos todo o Quadro de Distribuição de Circuitos (QDC) para facilitar a manutenção futura.</p>
+
+        <h2>Adequação à NBR 5410</h2>
+        <p>A norma <strong>NBR 5410</strong> regulamenta as instalações elétricas de baixa tensão no Brasil. Ela exige itens indispensáveis de proteção, como o <strong>IDR</strong> (Interruptor Diferencial Residual) — que corta o fornecimento em milissegundos caso detecte um vazamento de corrente que possa causar choques fatais — e o <strong>DPS</strong> (Dispositivo de Proteção contra Surtos), que protege suas TVs e eletrônicos contra queimas causadas por quedas de raios na rede da cidade. Adequamos o seu painel elétrico a todas essas normas técnicas vitais.</p>
+    </section>
+
+    <!-- Área de Atendimento Ampliada -->
+    <section>
+        <h2>Atendimento em Botucatu e Região</h2>
+        <p>Nossa base operacional em Botucatu permite deslocamento ágil para vistorias Boneca e atendimentos de rotina. Cobrimos o centro urbano e cidades limítrofes com rapidez:</p>
+        <ul class="bairros-list">
+            <li>Botucatu</li>
+            <li>São Manuel</li>
+            <li>Pardinho</li>
+            <li>Pratânia</li>
+            <li>Itatinga</li>
+            <li>Avaré</li>
+            <li>Lençóis Paulista</li>
+            <li>Bofete</li>
+        </ul>
+    </section>
+
+    <!-- Google Maps Incorporado Físico -->
+    <section>
+        <h2>Localização e Cobertura Geográfica</h2>
+        <p>Confira nossa área principal de atuação em Botucatu, SP. Atendemos condomínios residenciais, distritos industriais e estabelecimentos comerciais.</p>
+        <div class="mapa-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58931.240752528734!2d-48.47879485!3d-22.8836923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c7263b6bc69363%3A0xc3f8e6c75dfb3e0!2sBotucatu%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
+                width="100%"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- FAQ Seção -->
+    <section class="faq">
+        <h2>Perguntas Frequentes sobre Serviços Elétricos</h2>
+        
+        <h3>Como posso identificar que há um curto-circuito na minha rede elétrica?</h3>
+        <p>Quedas constantes e repentinas do disjuntor geral, cheiro forte de plástico queimado próximo às tomadas, estalos ao ligar interruptores ou tomadas visivelmente aquecidas ou escurecidas são sinais claros de falhas elétricas graves que exigem desligamento imediato e suporte técnico.</p>
+
+        <h3>Qual é a real importância de ter um Dispositivo DR no meu quadro elétrico?</h3>
+        <p>O Dispositivo DR (Diferencial Residual) detecta microfugas de corrente — como uma pessoa levando um choque — e corta a energia instantaneamente em milissegundos, evitando que o choque elétrico se torne fatal. É um item obrigatório por norma.</p>
+    </section>
+
+    <!-- Chamada para Ação (CTA) Final -->
+    <section style="text-align: center; background: #f9f9f9; padding: 40px 20px; border-radius: 10px; margin-top: 40px; border: 1px dashed #0056b3;">
+        <h2>Precisa de um Eletricista Agora?</h2>
+        <p>Não coloque seu patrimônio ou a segurança da sua família em risco com soluções amadoras. Peça uma avaliação técnica qualificada e garanta o padrão NBR 5410 na sua infraestrutura.</p>
+        <a href="https://api.whatsapp.com/send?phone=5511983316372&text=Olá%2C%20preciso%20de%20um%20eletricista%20urgente%20em%20Botucatu." class="btn-whats" target="_blank" rel="noopener noreferrer">
+            📞 Solicitar Orçamento via WhatsApp
+        </a>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Drywall Victorino - Todos os direitos reservados.</p>
+    <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">Segurança e Conformidade com a Norma NBR 5410 em Instalações Elétricas.</p>
+</footer>
+
+</body>
+</html>
