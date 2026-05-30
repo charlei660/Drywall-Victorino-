@@ -1,33 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <!-- Home Page -->
-    <url>
-        <loc>https://drywallvictorino.com.br/</loc>
-        <priority>1.00</priority>
-        <changefreq>weekly</changefreq>
-    </url>
-    <!-- Página Otimizada de Eletricista -->
-    <url>
-        <loc>https://drywallvictorino.com.br/eletricista/botucatu/</loc>
-        <priority>0.90</priority>
-        <changefreq>monthly</changefreq>
-    </url>
-    <!-- Próxima Página: Gesseiro -->
-    <url>
-        <loc>https://drywallvictorino.com.br/gesseiro/botucatu/</loc>
-        <priority>0.80</priority>
-        <changefreq>monthly</changefreq>
-    </url>
-    <!-- Próxima Página: Drywall -->
-    <url>
-        <loc>https://drywallvictorino.com.br/drywall/botucatu/</loc>
-        <priority>0.80</priority>
-        <changefreq>monthly</changefreq>
-    </url>
-    <!-- Próxima Página: Pintor -->
-    <url>
-        <loc>https://drywallvictorino.com.br/pintor/botucatu/</loc>
-        <priority>0.80</priority>
-        <changefreq>monthly</changefreq>
-    </url>
+
+  <url>
+    <loc>https://drywallvictorino.com.br/</loc>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://drywallvictorino.com.br/eletricista-botucatu/</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
 </urlset>
