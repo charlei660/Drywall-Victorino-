@@ -192,7 +192,7 @@
             </p>
         </div>
 
-        <!-- Imagem de Destaque Corrigida -->
+        <!-- Imagem de Destaque -->
         <img src="https://drywallvictorino.com.br/imagens/eletrica.png" 
              alt="Eletricista profissional realizando instalação elétrica residencial em Botucatu" 
              loading="lazy" 
@@ -205,31 +205,41 @@
         </div>
     </section>
 
-    <!-- Conteúdo Expandido Localizado -->
+    <!-- Conteúdo Expandido Organizado na Grid do CSS -->
     <section>
-        <h2>Eletricista Residencial em Botucatu</h2>
-        <p>A fiação de uma residência desgasta-se naturalmente com o passar dos anos. O aumento do uso de eletrodomésticos modernos exige uma revisão completa do sistema. Atuamos na identificação preventiva de falhas ocultas, substituição de fiação antiga por condutores de cobre normatizados, instalação de tomadas adicionais nos padrões corretos de amperagem (10A e 20A) e modernização geral para garantir que seus equipamentos funcionem sem quedas de tensão.</p>
-
-        <h2>Eletricista Comercial em Botucatu</h2>
-        <p>Comércios e escritórios possuem dinâmicas elétricas complexas que necessitam de distribuição equilibrada de cargas. Falhas na rede comercial podem paralisar computadores, sistemas de refrigeração e maquinários, gerando prejuízos financeiros. Desenvolvemos infraestruturas elétricas dedicadas para CPDs, circuitos estabilizados para computadores, iluminação técnica em LED para fachadas e salões de atendimento, além de manutenções preventivas programadas para não interferir no horário de funcionamento do seu negócio.</p>
-
-        <h2>Troca de Padrão CPFL</h2>
-        <p>O padrão de entrada de energia é a interface entre a concessionária de energia e o seu imóvel. Se o seu padrão atual é antigo (como caixas de ferro) ou se você precisa aumentar a carga de monofásico para bifásico ou trifásico devido à instalação de novos aparelhos de ar-condicionado, realizamos a adequação técnica completa exigida pela <strong>CPFL Paulista</strong>. Montamos e instalamos o novo padrão de concreto homologado, emitindo os laudos necessários para a rápida liberação do fornecimento.</p>
-
-        <h2>Instalação de Chuveiros</h2>
-        <p>O chuveiro elétrico é um dos itens que mais consomem corrente em um ambiente residencial. A instalação incorreta ou a substituição de um modelo simples por um chuveiro de alta potência sem a devida troca dos fios pode derreter isolamentos e causar princípios de incêndio. Nós calculamos a bitola correta do cabo (ex: 4mm², 6mm² ou 10mm²) e instalamos o disjuntor correto para o modelo escolhido, proporcionando banhos confortáveis e sem desarmes indesejados no meio do inverno.</p>
-
-        <h2>Troca de Disjuntores</h2>
-        <p>Disjuntores antigos do tipo "Preto" (NEMA) perdem a eficiência de calibração térmica com o tempo, falhando no momento de proteger a sua casa contra sobrecargas. Substituímos esses modelos antigos pelos modernos disjuntores padrão DIN (Brancos), que possuem tempo de resposta muito mais ágil. Além disso, organizamos e etiquetamos todo o Quadro de Distribuição de Circuitos (QDC) para facilitar a manutenção futura.</p>
-
-        <h2>Adequação à NBR 5410</h2>
-        <p>A norma <strong>NBR 5410</strong> regulamenta as instalações elétricas de baixa tensão no Brasil. Ela exige itens indispensáveis de proteção, como o <strong>IDR</strong> (Interruptor Diferencial Residual) — que corta o fornecimento em milissegundos caso detecte um vazamento de corrente que possa causar choques fatais — e o <strong>DPS</strong> (Dispositivo de Proteção contra Surtos), que protege suas TVs e eletrônicos contra queimas causadas por quedas de raios na rede da cidade. Adequamos o seu painel elétrico a todas essas normas técnicas vitais.</p>
+        <h2>Nossos Serviços Elétricos</h2>
+        <div class="servicos-grid">
+            <div class="card">
+                <h3>Eletricista Residencial</h3>
+                <p>Identificação preventiva de falhas ocultas, substituição de fiação antiga por condutores de cobre normatizados, instalação de tomadas nos padrões corretos de amperagem (10A e 20A) e modernização geral do sistema para evitar quedas de tensão.</p>
+            </div>
+            <div class="card">
+                <h3>Eletricista Comercial</h3>
+                <p>Desenvolvimento de infraestruturas elétricas dedicadas para CPDs, circuitos estabilizados para computadores, iluminação técnica em LED para fachadas e salões de atendimento, com manutenções preventivas programadas.</p>
+            </div>
+            <div class="card">
+                <h3>Troca de Padrão CPFL</h3>
+                <p>Adequação técnica completa exigida pela <strong>CPFL Paulista</strong> para aumento de carga (monofásico para bifásico ou trifásico). Montagem e instalação do novo padrão de concreto homologado com emissão de laudos.</p>
+            </div>
+            <div class="card">
+                <h3>Instalação de Chuveiros</h3>
+                <p>Cálculo exato da bitola do cabo (4mm², 6mm² ou 10mm²) e dimensionamento do disjuntor correto para modelos de alta potência, proporcionando banhos seguros e eliminando derretimentos de fiação.</p>
+            </div>
+            <div class="card">
+                <h3>Troca de Disjuntores</h3>
+                <p>Substituição de disjuntores antigos padrão NEMA (pretos) pelos modernos modelos padrão DIN (brancos), que oferecem maior velocidade de resposta contra curtos. Organização e etiquetagem do quadro (QDC).</p>
+            </div>
+            <div class="card">
+                <h3>Adequação à NBR 5410</h3>
+                <p>Instalação de itens indispensáveis de proteção exigidos por lei: o <strong>IDR</strong> (evita choques elétricos fatais cortando a corrente) e o <strong>DPS</strong> (protege eletrônicos e queimas contra surtos e quedas de raios).</p>
+            </div>
+        </div>
     </section>
 
-    <!-- Área de Atendimento Ampliada -->
+    <!-- Área de Atendimento Corrigida -->
     <section>
         <h2>Atendimento em Botucatu e Região</h2>
-        <p>Nossa base operacional em Botucatu permite deslocamento ágil para vistorias Boneca e atendimentos de rotina. Cobrimos o centro urbano e cidades limítrofes com rapidez:</p>
+        <p>Nossa base operacional em Botucatu permite um deslocamento ágil para vistorias técnicas e atendimentos de rotina. Cobrimos o centro urbano e cidades limítrofes com rapidez:</p>
         <ul class="bairros-list">
             <li>Botucatu</li>
             <li>São Manuel</li>
