@@ -67,7 +67,7 @@
         .nav-contact { color: #fff; font-weight: 600; text-decoration: none; font-size: 1rem; display: flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.08); padding: 8px 16px; border-radius: 6px; transition: 0.3s; }
         .nav-contact:hover { background: rgba(255,255,255,0.15); }
         
-        /* Hero Section (AIDA - Atenção) */
+        /* Hero Section */
         .hero { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: #fff; padding: 80px 0 100px 0; overflow: hidden; position: relative; }
         .hero::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><circle cx="2" cy="2" r="1" fill="rgba(255,255,255,0.05)"/></svg>'); opacity: 0.5; }
         .hero-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 48px; align-items: center; position: relative; z-index: 2; }
@@ -109,7 +109,7 @@
         .link-interno a { color: var(--secondary); font-weight: 700; text-decoration: none; font-size: 0.95rem; }
         .link-interno a:hover { text-decoration: underline; }
         
-        /* Grid de Serviços Modernizados (Cards) */
+        /* Grid de Serviços */
         .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 32px; margin-top: 40px; }
         .service-card { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 32px; transition: all 0.3s ease; display: flex; flex-direction: column; position: relative; overflow: hidden; }
         .service-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: transparent; transition: 0.3s; }
@@ -119,13 +119,13 @@
         .service-card h3 { margin-bottom: 12px; font-size: 1.4rem; color: var(--dark); }
         .service-card p { font-size: 0.95rem; color: #475569; margin-bottom: 0; flex-grow: 1; }
         
-        /* Seção Benefícios Pas / Gatilhos */
+        /* Grid de Benefícios */
         .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; margin-bottom: 40px; }
         .feature-item { background: #fff; padding: 24px; border-radius: 8px; border-left: 4px solid var(--primary); box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
         .feature-item h4 { font-size: 1.1rem; margin-bottom: 8px; }
         .feature-item p { margin: 0; font-size: 0.95rem; color: #475569; }
         
-        /* Elementos de Prova Social */
+        /* Depoimentos */
         .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin: 40px 0; }
         .review-card { background: #fff; padding: 32px; border-radius: 10px; border: 1px solid var(--border); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.01); }
         .stars { color: var(--primary); margin-bottom: 12px; font-size: 1.2rem; }
@@ -135,14 +135,14 @@
         .reviewer-name { font-weight: 600; font-size: 0.95rem; color: var(--dark); }
         .reviewer-meta { font-size: 0.8rem; color: var(--gray); }
         
-        /* Lista de Localidades Genuína */
+        /* Localidades */
         .locations-box { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 32px; margin-top: 32px; }
         .locations-title { font-size: 1.2rem; font-weight: 600; margin-bottom: 16px; color: var(--dark); display: flex; align-items: center; gap: 8px; }
         .bairros-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; list-style: none; padding: 0; margin: 0; }
         .bairros-list li { background: var(--light); padding: 10px 14px; border-radius: 6px; font-size: 0.9rem; color: #475569; border: 1px solid #f1f5f9; font-weight: 500; transition: 0.2s; }
         .bairros-list li:hover { background: #fff; border-color: #cbd5e1; color: var(--secondary); transform: translateY(-1px); }
         
-        /* FAQ Estruturado Accordion Puro CSS */
+        /* FAQ Accordion */
         .faq-container { max-width: 800px; margin: 0 auto; }
         .faq-item { background: #fff; border: 1px solid var(--border); border-radius: 8px; margin-bottom: 16px; overflow: hidden; }
         .faq-checkbox { display: none; }
@@ -154,12 +154,12 @@
         .faq-checkbox:checked ~ .faq-question::after { content: '−'; transform: rotate(180deg); }
         .faq-checkbox:checked ~ .faq-answer { max-height: 1000px; padding: 20px 24px; transition: max-height 0.3s cubic-bezier(1, 0, 1, 0); }
         
-        /* Inline Elements Map & Images */
+        /* Mapas e Imagens */
         .img-responsiva { width: 100%; height: auto; border-radius: 12px; display: block; object-fit: cover; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05); }
         .mapa-container { margin-top: 32px; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); border: 1px solid var(--border); height: 400px; }
         .mapa-container iframe { width: 100%; height: 100%; border: 0; display: block; }
         
-        /* CTAs de meio e fim de página */
+        /* CTAs */
         .mid-page-cta { background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%); color: #fff; padding: 48px; border-radius: 16px; text-align: center; margin: 48px 0; box-shadow: 0 10px 25px -5px rgba(37,99,235,0.3); }
         .mid-page-cta h3 { color: #fff; font-size: 1.8rem; margin-bottom: 12px; }
         .mid-page-cta p { color: #bfdbfe; font-size: 1.05rem; margin-bottom: 24px; }
@@ -174,21 +174,6 @@
         .footer-links a:hover { color: #fff; }
         .footer-bottom { border-top: 1px solid #1e293b; padding-top: 32px; text-align: center; font-size: 0.85rem; }
         
-        /* Floating WhatsApp Icon */
-        .whatsapp-float { position: fixed; width: 64px; height: 64px; bottom: 24px; right: 24px; background-color: #25d366; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 32px; text-decoration: none; box-shadow: 0 4px 16px rgba(37,211,102,0.4); z-index: 9999; transition: all 0.3s ease; }
-        .whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 6px 20px rgba(37,211,102,0.6); }
-        .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
-        
-        /* Breadcrumb Bar */
-        .breadcrumb-bar { background: #f1f5f9; padding: 12px 0; font-size: 0.85rem; border-bottom: 1px solid var(--border); }
-        .breadcrumb-list { display: flex; list-style: none; gap: 8px; color: var(--gray); }
-        .breadcrumb-list li::after { content: '/'; margin-left: 8px; }
-        .breadcrumb-list li:last-child::after { content: ''; }
-        .breadcrumb-list a { color: var(--secondary); text-decoration: none; font-weight: 500; }
-        .breadcrumb-list a:hover { text-decoration: underline; }
-        .breadcrumb-list li:last-child { color: var(--gray); font-weight: 400; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-
-        /* Responsividade */
         @media (max-width: 992px) {
             .hero-grid { grid-template-columns: 1fr; gap: 40px; }
             .hero h1 { font-size: 2.4rem; }
@@ -321,7 +306,7 @@
             <a href="https://drywallvictorino.com.br/" class="logo">
                 ⚡ Drywall<span>Victorino</span>
             </a>
-            <a href="https://api.whatsapp.com/send?phone=5511983316372&text=Olá%2C%20preciso%20de%20um%20eletricista%20em%20Botucatu." class="nav-contact" target="_blank" rel="noopener noreferrer">
+            <a href="https://api.whatsapp.com/send?phone=5511983316372&text=Ol%C3%A1%21+Acessei+o+site+e+gostaria+de+falar+com+um+eletricista+em+Botucatu." class="nav-contact" target="_blank" rel="noopener noreferrer">
                 <span>📞</span> (11) 98331-6372
             </a>
         </div>
@@ -352,7 +337,7 @@
                 </div>
                 
                 <div style="display: flex; gap: 16px; flex-wrap: wrap;">
-                    <a href="https://api.whatsapp.com/send?phone=5511983316372&text=Olá%2C%20gostaria%20de%20solicitar%20um%20orçamento%20para%20serviços%20elétricos." class="btn btn-success" target="_blank" rel="noopener noreferrer">
+                    <a href="https://api.whatsapp.com/send?phone=5511983316372&text=Ol%C3%A1%21+Gostaria+de+solicitar+um+or%C3%A7amento+para+servi%C3%A7os+el%C3%A9tricos+com+a+Drywall+Victorino." class="btn btn-success" target="_blank" rel="noopener noreferrer">
                         🟢 Chamar no WhatsApp Agora
                     </a>
                 </div>
@@ -375,7 +360,7 @@
                     <div class="form-group">
                         <label for="servico">Qual serviço elétrico você precisa?</label>
                         <select id="servico" class="form-control" required>
-                            <option value="">Selecione uma opção...</option>
+                            <option value="">Selecione uma option...</option>
                             <option value="Curto-Circuito / Manutenção Urgente">Curto-Circuito / Queda de Disjuntor</option>
                             <option value="Troca de Fiação Geral">Substituição de Fiação Antiga</option>
                             <option value="Instalação de Chuveiro / Tomadas">Instalação de Chuveiro / Tomadas Novas</option>
@@ -433,7 +418,7 @@
             <article class="service-card">
                 <div class="service-icon">🔌</div>
                 <h3>Instalação e Troca de Padrão CPFL</h3>
-                <p>Adequação física total conforme o regulamento técnico da <strong>CPFL Paulista</strong>. Montagem de caixa de padrão em poste de concreto homolagado, transição técnica para redes bifásicas ou trifásicas devido a aumentos expressivos de carga ou novos aparelhos de ar-condicionado.</p>
+                <p>Adequação física total conforme o regulamento técnico da <strong>CPFL Paulista</strong>. Montagem de caixa de padrão em poste de concreto homologado, transição técnica para redes bifásicas ou trifásicas devido a aumentos expressivos de carga ou novos aparelhos de ar-condicionado.</p>
             </article>
 
             <article class="service-card">
@@ -452,7 +437,7 @@
         <div class="mid-page-cta">
             <h3>Está enfrentando problemas com quedas constantes de disjuntor?</h3>
             <p>Disjuntores desarmando são avisos claros de que sua fiação está operando acima do limite seguro. Evite acidentes elétricos graves ou princípios de incêndio em seu imóvel.</p>
-            <a href="https://api.whatsapp.com/send?phone=5511983316372&text=Olá%2C%20meu%20disjuntor%20está%20caindo%20e%20gostaria%20de%20uma%20avaliação." class="btn btn-success" target="_blank" rel="noopener noreferrer">
+            <a href="https://api.whatsapp.com/send?phone=5511983316372&text=S.O.S+Eletricista%21+Meu+disjuntor+est%C3%A1+caindo+frequentemente+e+preciso+de+um+atendimento+urgente+em+Botucatu." class="btn btn-success" target="_blank" rel="noopener noreferrer">
                 🟢 Chamar Técnico de Urgência no WhatsApp
             </a>
         </div>
@@ -492,7 +477,7 @@
                     <h3>Manutenção Preventiva de Fiação Inteligente</h3>
                     <p>Se você nota que as tomadas da sua casa aquecem excessivamente quando liga o secador de cabelo, a fritadeira elétrica ou o micro-ondas, sua fiação está sofrendo o chamado efeito Joule (perda de energia em formato de calor). Esse fenômeno, além de encarecer a conta de luz drasticamente, degrada a integridade do plástico isolador dos cabos.</p>
                     <p>Nossa equipe realiza o redimensionamento completo de circuitos dedicados para cozinhas, lavanderias e aparelhos de ar-condicionado de forma limpa, rápida e econômica.</p>
-                    <a href="https://api.whatsapp.com/send?phone=5511983316372&text=Olá%2C%20gostaria%20de%20fazer%20uma%20revisão%20na%20fiação%20da%20minha%20casa." class="btn btn-success" style="margin-top: 12px;" target="_blank" rel="noopener noreferrer">Falar com Especialista Técnico</a>
+                    <a href="https://api.whatsapp.com/send?phone=5511983316372&text=Ol%C3%A1%21+Gostaria+de+agendar+uma+revis%C3%A3o+preventiva+na+fia%C3%A7%C3%A3o+el%C3%A9trica+do+meu+im%C3%B3vel." class="btn btn-success" style="margin-top: 12px;" target="_blank" rel="noopener noreferrer">Falar com Especialista Técnico</a>
                 </div>
             </div>
         </div>
@@ -546,7 +531,7 @@
     <section class="bg-gray section" aria-label="Área de Cobertura Geográfica">
         <div class="container">
             <div class="section-header-center">
-                <h2>Regiões Atendidas com Prontidão Técnica</h2>
+                <h2>Regiões Atendidas com Prontidão Técnico</h2>
                 <p>Nossa logística interna otimizada garante deslocamento rápido e pontual para vistorias, laudos ou manutenções corretivas em toda a mancha urbana de Botucatu e municípios vizinhos.</p>
             </div>
 
@@ -628,7 +613,7 @@
                 <input type="checkbox" id="faq-4" class="faq-checkbox">
                 <label for="faq-4" class="faq-question">Posso usar a mesma fiação do chuveiro antigo para instalar um modelo novo mais potente?</label>
                 <div class="faq-answer">
-                    <p>Definitivamente não recomendável. Chuveiros elétricos modernos de alta potência (como modelos eletrônicos ou pressurizados de 7500W a 8800W) demandam correntes elétricas elevadas. Se instalados in cabos antigos ou subdimensionados de 4mm², haverá forte superaquecimento e derretimento imediato dos conectores e fios.</p>
+                    <p>Definitivamente não recomendável. Chuveiros elétricos modernos de alta potência (como modelos eletrônicos ou pressurizados de 7500W a 8800W) demandam correntes elétricas elevadas. Se instalados em cabos antigos ou subdimensionados de 4mm², haverá forte superaquecimento e derretimento imediato dos conectores e fios.</p>
                     <p>Geralmente esses modelos exigem cabos de cobre de no mínimo 6mm² ou 10mm² acompanhados de disjuntores específicos de alta performance calculados sob medida.</p>
                 </div>
             </div>
@@ -639,7 +624,8 @@
         <div class="container" style="max-width: 800px;">
             <h2 style="color: #fff; display: inline-block; margin-bottom: 24px;">Garanta a Segurança da Sua Infraestrutura Elétrica Hoje</h2>
             <p style="color: #cbd5e1; font-size: 1.15rem; margin-bottom: 32px;">Não coloque a vida de sua família ou a integridade de sua empresa nas mãos de curiosos ou em soluções improvisadas (gambiarras). Conte com técnicos competentes para blindar o seu patrimônio com garantia em contrato.</p>
-            <a href="https://api.whatsapp.com/send?phone=5511983316372&text=Olá%2C%20gostaria%20de%20agendar%20uma%20visita%20técnica%20com%20um%20eletricista." class="btn btn-success" style="font-size: 1.2rem; padding: 20px 48px;">
+            
+            <a href="https://api.whatsapp.com/send?phone=5511983316372&text=Ol%C3%A1%21+Gostaria+de+agendar+uma+visita+t%C3%A9cnica+com+um+eletricista+para+avaliar+meu+projeto." class="btn btn-success" style="font-size: 1.2rem; padding: 20px 48px;">
                 🟢 Solicitar Atendimento Técnico Gratuito
             </a>
         </div>
@@ -679,7 +665,7 @@
         </div>
     </footer>
 
-    <a href="https://api.whatsapp.com/send?phone=5511983316372&text=Olá%2C%20preciso%20de%20um%20eletricista%20urgente%20em%20Botucatu." class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+    <a href="https://api.whatsapp.com/send?phone=5511983316372&text=Ol%C3%A1%21+Preciso+de+um+eletricista+urgente+em+Botucatu.+Pode+me+atender%3F" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
         <span>💬</span>
         <span class="sr-only">Chamar eletricista qualificado pelo WhatsApp</span>
     </a>
