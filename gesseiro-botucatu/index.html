@@ -10,294 +10,303 @@
     <link rel="canonical" href="https://drywallvictorino.com.br/gesseiro-botucatu/">
     <meta name="robots" content="index,follow">
 
-    <!-- Schema Markup LocalBusiness para SEO Local -->
+    <!-- Multi-Schema Markup: LocalBusiness + FAQ Schema -->
     <script type="application/ld+json">
-    {
-     "@context":"https://schema.org",
-     "@type":"HomeAndConstructionBusiness",
-     "name":"Drywall Victorino",
-     "url":"https://drywallvictorino.com.br",
-     "telephone":"+5511983316372",
-     "address":{
-       "@type":"PostalAddress",
-       "addressLocality":"Botucatu",
-       "addressRegion":"SP",
-       "addressCountry":"BR"
-     }
-    }
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "HomeAndConstructionBusiness",
+        "name": "Drywall Victorino",
+        "url": "https://drywallvictorino.com.br",
+        "telephone": "+5511983316372",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Botucatu",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Quanto custa um gesseiro em Botucatu?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "O valor depende da metragem, do modelo do forro e do tipo de acabamento que você deseja. Para passar o preço exato e justo para a sua necessidade, nós fazemos uma avaliação rápida. Solicite um orçamento gratuito pelo WhatsApp."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Vocês fazem parede drywall?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim! Somos especialistas na montagem de paredes e divisórias drywall para comércios, escritórios e residências, entregando uma estrutura firme e pronta para receber pintura."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Vocês atendem apenas Botucatu?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nossa base principal é aqui, mas atendemos Botucatu e todas as cidades vizinhas na região como Pardinho, Itatinga, São Manuel, Pratânia, Anhembi e Bofete."
+            }
+          }
+        ]
+      }
+    ]
     </script>
 
-    <!-- Estilização Premium Estilo Agência de Landing Pages -->
+    <!-- Estilização Baseada no Modelo das suas Páginas de Sucesso -->
     <style>
         :root {
-            --primary: #0f172a; /* Azul Escuro Premium */
-            --accent: #25d366;  /* Verde WhatsApp */
-            --text-main: #334155; /* Cinza Confortável para Leitura */
-            --bg-light: #f8fafc; /* Fundo Claro */
-            --blue-brand: #0284c7; /* Azul de Destaque */
+            --primary-dark: #1e293b;
+            --brand-blue: #0284c7;
+            --brand-green: #25d366;
+            --text-color: #334155;
+            --bg-light: #f8fafc;
         }
 
         body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
             line-height: 1.6;
-            color: var(--text-main);
+            color: var(--text-color);
             margin: 0;
             padding: 0;
-            background-color: #ffffff;
         }
 
-        /* Hero Section Moderna */
-        .hero-servico {
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-            color: #ffffff;
-            padding: 80px 20px;
-            text-align: center;
-            border-bottom: 4px solid var(--blue-brand);
-        }
-
-        .hero-container {
-            max-width: 800px;
+        .container {
+            max-width: 1100px;
             margin: 0 auto;
+            padding: 0 20px;
         }
 
-        .hero-servico h1 {
-            font-size: 2.8rem;
+        /* Hero Section no Estilo do Site */
+        .hero {
+            background: linear-gradient(rgba(15, 23, 42, 0.9), rgba(30, 41, 59, 0.95)), url('/imagens/gesseiro-botucatu-bg.jpg') center/cover no-repeat;
+            color: #ffffff;
+            padding: 90px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
             margin: 0 0 15px 0;
             font-weight: 800;
-            letter-spacing: -1px;
-            color: #ffffff;
         }
 
-        .subtitulo {
-            font-size: 1.3rem;
-            color: #94a3b8;
+        .hero p {
+            font-size: 1.2rem;
+            color: #cbd5e1;
             margin: 0 0 25px 0;
-            font-weight: 400;
         }
 
-        /* Selo de Avaliação do Google */
-        .avaliacao {
-            display: inline-flex;
-            align-items: center;
-            background: rgba(255, 255, 255, 0.08);
-            padding: 8px 16px;
-            border-radius: 50px;
+        .rating-box {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 6px 18px;
+            border-radius: 30px;
             font-size: 0.95rem;
             color: #f1c40f;
-            font-weight: 600;
             margin-bottom: 30px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        .avaliacao span {
-            color: #e2e8f0;
-            margin-left: 8px;
+        .rating-box span {
+            color: #f8fafc;
+            margin-left: 5px;
         }
 
-        /* Botão de Conversão Superior */
-        .btn-whatsapp {
+        /* Botão de Ação Clássico */
+        .btn-cta {
             display: inline-block;
-            background-color: var(--accent);
+            background-color: var(--brand-green);
             color: #ffffff;
-            padding: 16px 32px;
+            padding: 15px 35px;
             text-decoration: none;
             font-weight: bold;
             font-size: 1.1rem;
-            border-radius: 8px;
-            box-shadow: 0 10px 15px -3px rgba(37, 211, 102, 0.3);
-            transition: all 0.3s ease;
+            border-radius: 6px;
+            transition: transform 0.2s, background-color 0.2s;
         }
 
-        .btn-whatsapp:hover {
+        .btn-cta:hover {
             transform: translateY(-2px);
-            box-shadow: 0 20px 25px -5px rgba(37, 211, 102, 0.4);
             background-color: #1ebd54;
         }
 
-        /* Estrutura das Seções do Site */
-        section {
-            padding: 60px 20px;
+        /* Blocos de Conteúdo Alternados */
+        .section-padding {
+            padding: 70px 0;
         }
 
-        .section-container {
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        section:nth-child(even) {
+        .section-padding:nth-child(even) {
             background-color: var(--bg-light);
         }
 
         h2 {
             font-size: 2rem;
-            color: var(--primary);
+            color: var(--primary-dark);
             margin-top: 0;
-            margin-bottom: 20px;
-            font-weight: 700;
-            position: relative;
+            margin-bottom: 25px;
         }
 
         h2::after {
             content: '';
             display: block;
-            width: 50px;
+            width: 60px;
             height: 4px;
-            background-color: var(--blue-brand);
-            margin-top: 10px;
-            border-radius: 2px;
+            background-color: var(--brand-blue);
+            margin-top: 8px;
         }
 
-        p {
-            font-size: 1.1rem;
-            margin-bottom: 20px;
-            color: var(--text-main);
-        }
-
-        /* Grid de Serviços Estilo Cards de Agência */
-        .services-grid {
+        /* Grid de Imagens e Texto Lado a Lado */
+        .content-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            align-items: center;
+        }
+
+        .content-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        /* Grade de Cards de Serviços */
+        .grid-servicos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
             gap: 20px;
             margin-top: 30px;
         }
 
-        .service-card {
+        .card-servico {
             background: #ffffff;
             padding: 25px;
-            border-radius: 12px;
-            border: 1px solid #e2e8f0;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .service-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-            border-color: #cbd5e1;
-        }
-
-        .service-card h4 {
-            margin: 0 0 10px 0;
-            font-size: 1.25rem;
-            color: var(--primary);
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        /* FAQ Sanfona */
-        .faq-item {
-            background: #ffffff;
-            border: 1px solid #e2e8f0;
-            margin-bottom: 12px;
             border-radius: 8px;
-            padding: 20px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
         }
 
-        .faq-item h3 {
+        .card-servico h4 {
             margin: 0 0 10px 0;
             font-size: 1.2rem;
-            color: var(--primary);
+            color: var(--primary-dark);
         }
 
-        .faq-item p {
+        /* Bloco de FAQ */
+        .faq-block {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+
+        .faq-block h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.15rem;
+            color: var(--primary-dark);
+        }
+
+        .faq-block p {
             margin: 0;
-            font-size: 1rem;
-            color: var(--text-main);
         }
 
-        /* Seção de Links e Integração */
-        .links-integracao a {
-            color: var(--blue-brand);
+        .links-ancora a {
+            color: var(--brand-blue);
             text-decoration: none;
             font-weight: 600;
-            border-bottom: 2px solid transparent;
-            transition: border 0.2s ease;
         }
 
-        .links-integracao a:hover {
-            border-color: var(--blue-brand);
+        .links-ancora a:hover {
+            text-decoration: underline;
         }
 
-        /* Seção Footer CTA Emocional */
-        .cta-final {
-            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+        /* Banner de Encerramento */
+        .footer-cta {
+            background: var(--primary-dark);
             color: #ffffff;
             text-align: center;
-            padding: 70px 20px;
+            padding: 60px 0;
         }
 
-        .cta-final h3 {
-            font-size: 2rem;
+        .footer-cta h3 {
+            font-size: 1.8rem;
             margin: 0 0 15px 0;
-            color: #ffffff;
         }
 
-        .cta-final p {
+        .footer-cta p {
             color: #94a3b8;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
 
-        /* Responsividade para Celular */
         @media (max-width: 768px) {
-            .hero-servico { padding: 50px 20px; }
-            .hero-servico h1 { font-size: 2rem; }
-            .subtitulo { font-size: 1.1rem; }
-            h2 { font-size: 1.6rem; }
-            section { padding: 40px 20px; }
+            .hero h1 { font-size: 1.9rem; }
+            h2 { font-size: 1.5rem; }
+            .section-padding { padding: 45px 0; }
         }
     </style>
 </head>
 <body>
 
-    <!-- [Cole aqui o código do seu Menu/Header Principal] -->
+    <!-- [Mantenha aqui o código padrão do seu Menu/Header] -->
 
     <main>
-        <!-- Hero Section de Alta Conversão -->
-        <section class="hero-servico">
-            <div class="hero-container">
+        <!-- Hero Banner Otimizado -->
+        <section class="hero">
+            <div class="container">
                 <h1>Gesseiro em Botucatu</h1>
-                <p class="subtitulo">Forro de Gesso, Drywall, Sancas e Acabamentos com Atendimento em Botucatu e Região</p>
+                <p>Forro de Gesso, Drywall, Sancas e Acabamentos com Atendimento em Botucatu e Região</p>
                 
-                <div class="avaliacao">
-                    ⭐⭐⭐⭐⭐ <span>5,0 estrelas no Google • Atendimento Rápido</span>
+                <div class="rating-box">
+                    ⭐⭐⭐⭐⭐ <span>5,0 estrelas no Google • Orçamento sem compromisso</span>
                 </div>
                 
                 <div>
-                    <a href="https://wa.me/5511983316372" class="btn-whatsapp" target="_blank">Solicitar Orçamento Grátis</a>
+                    <a href="https://wa.me/5511983316372" class="btn-cta" target="_blank">Falar com Gesseiro no WhatsApp</a>
                 </div>
             </div>
         </section>
 
-        <!-- Apresentação com foco em Obra Limpa e Confiança -->
-        <section>
-            <div class="section-container">
-                <h2>Gesseiro em Botucatu com Preço Justo e Trabalho Limpo</h2>
-                <p>Se você está construindo, reformando ou querendo dar uma cara nova para sua casa ou comércio, encontrar um bom <strong>gesseiro Botucatu</strong> é o segredo para ter um acabamento perfeito. Nossa equipe é especialista em transformar ambientes usando materiais de primeira linha e entregando o serviço no prazo combinado, sempre prezando pela limpeza da sua obra.</p>
-                <p>Atendemos clientes residenciais e comerciais em toda a região com soluções sob medida. Seja para fazer um rebaixamento de teto moderno ou para erguer uma parede rápida de gesso acartonado, nós garantimos um serviço profissional com o melhor custo-benefício do mercado.</p>
+        <!-- Bloco 1: Quem Somos / Qualidade -->
+        <section class="section-padding">
+            <div class="container content-grid">
+                <div>
+                    <h2>Gesseiro em Botucatu com Preço Justo e Trabalho Limpo</h2>
+                    <p>Se você está construindo, reformando ou querendo dar uma cara nova para sua casa ou comércio, encontrar um bom <strong>gesseiro Botucatu</strong> é o segredo para ter um acabamento perfeito. Nossa equipe é especialista em transformar ambientes usando materiais de primeira linha e entregando o serviço no prazo combinado, sempre prezando pela limpeza da sua obra.</p>
+                    <p>Atendemos clientes residenciais e comerciais em toda a região com soluções sob medida. Seja para fazer um rebaixamento de teto moderno ou para erguer uma parede rápida de gesso acartonado, nós garantimos um serviço profissional com o melhor custo-benefício do mercado.</p>
+                </div>
+                <div>
+                    <img src="/imagens/gesseiro-botucatu-servico.jpg" alt="Serviço de gesso profissional em Botucatu" class="content-image">
+                </div>
             </div>
         </section>
 
-        <!-- Grid de Serviços Premium (Visual de Agência) -->
-        <section>
-            <div class="section-container">
+        <!-- Bloco 2: Portfólio de Soluções -->
+        <section class="section-padding">
+            <div class="container">
                 <h2>Nossos Serviços de Gesso e Drywall</h2>
-                <p>Soluções completas e sob medida para tetos, divisórias e decorações internas:</p>
+                <p>Soluções sob medida para valorizar cada detalhe do seu imóvel:</p>
                 
-                <div class="services-grid">
-                    <div class="service-card">
+                <div class="grid-servicos">
+                    <div class="card-servico">
                         <h4>🔨 Estruturas e Tetos</h4>
                         <p>Forro de gesso acartonado e forro drywall duráveis que garantem isolamento perfeito e alinhamento impecável.</p>
                     </div>
-                    <div class="service-card">
+                    <div class="card-servico">
                         <h4>📐 Divisórias Inteligentes</h4>
                         <p>Parede drywall e divisória drywall sob medida para ganhar novos espaços ou separar ambientes sem sujeira.</p>
                     </div>
-                    <div class="service-card">
+                    <div class="card-servico">
                         <h4>✨ Sancas e Detalhes</h4>
                         <p>Sanca aberta, sanca fechada e sanca iluminada sob medida para valorizar o projeto de iluminação da sua sala ou quarto.</p>
                     </div>
-                    <div class="service-card">
+                    <div class="card-servico">
                         <h4>🎨 Acabamentos Finais</h4>
                         <p>Aplicação profissional de molduras de gesso e revestimento em gesso liso para deixar as paredes prontas para a pintura.</p>
                     </div>
@@ -305,59 +314,78 @@
             </div>
         </section>
 
-        <!-- Detalhes Focados nas Palavras-Chave Locais -->
-        <section>
-            <div class="section-container">
-                <h2>Especialistas em Drywall Botucatu</h2>
-                <p>Precisa dividir um quarto, criar um closet ou separar um escritório de forma rápida e sem aquela sujeira de tijolo e cimento? A <strong>parede drywall Botucatu</strong> e a <strong>divisória drywall Botucatu</strong> são as melhores opções. Elas aceitam fiação elétrica perfeitamente e ficam prontas para pintura em tempo recorde.</p>
-                <p>Além disso, o nosso serviço de <strong>forro de gesso Botucatu</strong> e teto de drywall é ideal para quem quer embutir iluminação moderna, esconder vigas ou garantir maior conforto térmico e acústico para os cômodos.</p>
-
-                <h2>Decoração com Sanca de Gesso Botucatu</h2>
-                <p>Para quem busca sofisticação, a instalação de uma <strong>sanca de gesso Botucatu</strong> muda completamente o visual da sala ou do quarto. Trabalhamos com modelos com rasgos de luz para fitas de LED, cortineiros e nichos. Também aplicamos <strong>molduras de gesso</strong> tradicionais e fazemos o revestimento de parede com <strong>gesso liso em Botucatu</strong>, eliminando imperfeições do reboco grosso.</p>
+        <!-- Bloco 3: Foco Local em Drywall -->
+        <section class="section-padding">
+            <div class="container content-grid">
+                <div>
+                    <img src="/imagens/drywall-botucatu-instalacao.jpg" alt="Instalação de divisórias de drywall em Botucatu" class="content-image">
+                </div>
+                <div>
+                    <h2>Especialistas em Drywall Botucatu</h2>
+                    <p>Precisa dividir um quarto, criar um closet ou separar um escritório de forma rápida e sem aquela sujeira de tijolo e cimento? A <strong>parede drywall Botucatu</strong> e a <strong>divisória drywall Botucatu</strong> são as melhores opções. Elas aceitam fiação elétrica perfeitamente e ficam prontas para pintura em tempo recorde.</p>
+                    <p>Além disso, o nosso serviço de <strong>forro de gesso Botucatu</strong> e teto de drywall é ideal para quem quer embutir iluminação moderna, esconder vigas ou garantir maior conforto térmico e acústico para os cômodos.</p>
+                </div>
             </div>
         </section>
 
-        <!-- Seção de Conexão entre Páginas (Linkagem Otimizada) -->
-        <section class="links-integracao">
-            <div class="section-container">
-                <h2>Atendimento Completo para sua Reforma</h2>
+        <!-- Bloco 4: Estética e Decoração -->
+        <section class="section-padding">
+            <div class="container content-grid">
+                <div>
+                    <h2>Decoração com Sanca de Gesso Botucatu</h2>
+                    <p>Para quem busca sofisticação, a instalação de uma <strong>sanca de gesso Botucatu</strong> muda completamente o visual da sala ou do quarto. Trabalhamos com modelos com rasgos de luz para fitas de LED, cortineiros e nichos.</p>
+                    <p>Também aplicamos <strong>molduras de gesso</strong> tradicionais e fazemos o revestimento de parede com <strong>gesso liso em Botucatu</strong>, eliminando imperfeições do reboco grosso e deixando tudo pronto para receber a pintura decorativa.</p>
+                </div>
+                <div>
+                    <img src="/imagens/sanca-gesso-botucatu.jpg" alt="Sanca de gesso com iluminação de LED" class="content-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Bloco 5: Cobertura Regional -->
+        <section class="section-padding">
+            <div class="container links-ancora">
+                <h2>Atendemos Botucatu e Região</h2>
+                <p>Nossa equipe está preparada para levar máxima qualidade e pontualidade até você. Além de atendermos toda a zona urbana e rural de Botucatu, estendemos nossos serviços de gesso e drywall para as cidades vizinhas:</p>
+                <p><strong>Também atendemos:</strong> Pardinho, Itatinga, São Manuel, Pratânia, Anhembi, Bofete e demais cidades da região.</p>
+                <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 30px 0;">
                 <p>Para facilitar sua reforma, nosso trabalho funciona em total sintonia com outros profissionais. Se o seu projeto de sanca ou forro precisar de iluminação embutida, nós preparamos toda a estrutura para o serviço de <a href="/eletricista-botucatu">eletricista em Botucatu</a>. E se você precisar proteger áreas úmidas como lavanderias ou beirais, também fazemos a instalação integrada de <a href="/forro-pvc/">forro PVC em Botucatu</a>.</p>
             </div>
         </section>
 
-        <!-- FAQ em Blocos Separados -->
-        <section>
-            <div class="section-container">
+        <!-- Bloco 6: Bloco FAQ Centralizado -->
+        <section class="section-padding">
+            <div class="container">
                 <h2>Perguntas Frequentes</h2>
                 
-                <div class="faq-item">
+                <div class="faq-block">
                     <h3>Quanto custa um gesseiro em Botucatu?</h3>
                     <p>O valor depende da metragem, do modelo do forro e do tipo de acabamento que você deseja. Para passar o preço exato e justo para a sua necessidade, nós fazemos uma avaliação rápida. Solicite um orçamento gratuito pelo WhatsApp.</p>
                 </div>
 
-                <div class="faq-item">
+                <div class="faq-block">
                     <h3>Vocês fazem parede drywall?</h3>
                     <p>Sim! Somos especialistas na montagem de paredes e divisórias drywall para comércios, escritórios e residências, entregando uma estrutura firme e pronta para receber pintura.</p>
                 </div>
 
-                <div class="faq-item">
+                <div class="faq-block">
                     <h3>Vocês atendem apenas Botucatu?</h3>
                     <p>Nossa base principal é aqui, mas atendemos Botucatu e todas as cidades vizinhas na região.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Seção CTA Final Imponente -->
-        <section class="cta-final">
-            <div class="hero-container">
-                <h3>Quer deixar seu ambiente mais bonito?</h3>
-                <p>Não feche seu projeto antes de falar com a gente. Mande uma mensagem agora mesmo, tire suas dúvidas e peça seu orçamento sem compromisso!</p>
-                <a href="https://wa.me/5511983316372" class="btn-whatsapp" target="_blank">Chamar no WhatsApp e Pedir Orçamento</a>
+        <!-- Banner Inferior de Fechamento -->
+        <section class="footer-cta">
+            <div class="container">
+                <h3>Pronto para Valorizar o Seu Imóvel?</h3>
+                <p>Mande uma mensagem agora mesmo, tire suas dúvidas e peça seu orçamento sem compromisso!</p>
+                <a href="https://wa.me/5511983316372" class="btn-cta" target="_blank">Chamar no WhatsApp agora</a>
             </div>
         </section>
     </main>
 
-    <!-- [Cole aqui o código do seu Rodapé/Footer Geral] -->
+    <!-- [Mantenha aqui o código padrão do seu Rodapé/Footer] -->
 
 </body>
 </html>
