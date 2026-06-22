@@ -8,7 +8,7 @@
     
     <link rel="icon" type="image/png" href="imagens/favicon.png">
 
-    <!-- COLOQUE SEU CÓDIGO REAL DO GOOGLE ABAIXO -->
+    <!-- ATENÇÃO: Substitua "seu-codigo-aqui" pelo código real do seu Google Search Console -->
     <meta name="google-site-verification" content="seu-codigo-aqui">
 
     <meta property="og:title" content="Drywall em Botucatu | Drywall Victorino">
@@ -83,6 +83,21 @@
         "addressCountry": "BR"
       },
       "areaServed": "Botucatu e região"
+    }
+    </script>
+
+    <!-- MELHORIA 3: Inclusão do Schema de Avaliação (AggregateRating) -->
+    <script type="application/ld+json">
+    {
+     "@context":"https://schema.org",
+     "@type":"LocalBusiness",
+     "name":"Drywall Victorino",
+     "telephone":"+5511983316372",
+     "aggregateRating":{
+       "@type":"AggregateRating",
+       "ratingValue":"5",
+       "reviewCount":"13"
+     }
     }
     </script>
 
@@ -431,6 +446,25 @@
 
         .whatsapp-floating:hover { transform: scale(1.1); }
 
+        /* Estilização Extra do Bloco do Google */
+        .avaliacoes-google-section {
+            background-color: var(--cor-card);
+            text-align: center;
+        }
+        .btn-google {
+            display: inline-block;
+            background-color: var(--cor-primaria);
+            color: #000000;
+            padding: 14px 28px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
+        .btn-google:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+        }
+
         @media (max-width: 768px) {
             .hero h2 { font-size: 2rem; }
             header .container {
@@ -461,7 +495,7 @@
         <section class="hero">
             <div class="container">
                 <h2>Especialistas em Forro PVC, Drywall e Gesso em Botucatu</h2>
-                <p>Projetos residenciais e comerciais com foco em acabamento premium, organização estrutural e entrega rápida. Soluções modernas e duráveis sob medida para o seu espaço.</p>
+                <p>Projetos residenciais e comerciais com foco em acabamento premium, organization estrutural e entrega rápida. Soluções modernas e duráveis sob medida para o seu espaço.</p>
                 <a href="https://wa.me/5511983316372?text=Ol%C3%A1%21+Vi+o+site+da+Drywall+Victorino+e+gostaria+de+um+or%C3%A7amento." target="_blank" onclick="dispararConversaoWhatsApp()" class="btn-cta">
                     Solicitar Orçamento no WhatsApp
                 </a>
@@ -509,6 +543,36 @@
                 </div>
             </div>
         </section>
+
+        <!-- ======================================================== -->
+        <!-- BLOCO DE AVALIAÇÕES ATUALIZADO (PROVA SOCIAL DE ADS)     -->
+        <!-- ======================================================== -->
+        <section id="avaliacoes-google-cta" class="avaliacoes-google-section">
+            <div class="container">
+                <div class="avaliacoes-google" style="max-width: 800px; margin: 0 auto;">
+                    <h2 style="margin-bottom: 20px;">Mais de 10 clientes satisfeitos ⭐⭐⭐⭐⭐</h2>
+                    
+                    <p style="font-size: 1.1rem; color: var(--cor-texto-mutado); margin-bottom: 30px; line-height: 1.6;">
+                        Veja avaliações reais de clientes que contrataram nossos serviços
+                        de Forro PVC, Drywall e Gesso em Botucatu.
+                    </p>
+
+                    <!-- MELHORIA 1: Texto do botão atualizado para aumentar cliques -->
+                    <a href="https://share.google/giddVJQiw9kmJJg5L"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn-google">
+                       <i class="fab fa-google" style="margin-right: 8px;"></i> ⭐⭐⭐⭐⭐ Ver 13 avaliações no Google
+                    </a>
+
+                    <!-- MELHORIA 2: Linha de apoio com nota comercial logo abaixo do botão -->
+                    <p style="margin-top:15px;color:#f4c400;font-weight:bold;">
+                        Nota 5,0 no Google • Clientes de Botucatu e Região
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- ======================================================== -->
 
         <section id="servicos">
             <div class="container">
