@@ -154,6 +154,34 @@
             transform: scale(1.03);
             border-color: #f4c400;
         }
+        /* Container para Vídeo Responsivo */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 8px;
+            border: 1px solid #222;
+            margin-top: 15px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .review-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #222;
+            padding-bottom: 15px;
+        }
+        .review-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
         footer {
             background: #111;
             border-top: 1px solid #222;
@@ -166,7 +194,7 @@
         }
     </style>
 
-    <!-- Schema JSON-LD LocalBusiness -->
+    <!-- Schema JSON-LD LocalBusiness com AggregateRating Incorporado -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -183,6 +211,11 @@
         "addressLocality": "Botucatu",
         "addressRegion": "SP",
         "addressCountry": "BR"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "13"
       },
       "sameAs":[
         "https://share.google/BUrLN2GQRttuQYoCa",
@@ -218,7 +251,7 @@
         <div class="container">
             <h1>Forro PVC Amadeirado em Botucatu</h1>
             <p>A elegância da madeira nobre com a durabilidade e economia do PVC.</p>
-            <p style="font-size: 1.05rem; color: #aaa; margin-bottom: 25px;">Também realizamos a <a href="/forro-pvc/botucatu/">instalação de forro PVC tradicional em Botucatu</a>.</p>
+            <p style="font-size: 1.05rem; color: #aaa; margin-bottom: 25px;">Também realizamos a instalação de <a href="/forro-pvc/">Forro PVC em Botucatu</a> na versão tradicional branca.</p>
             <a href="https://wa.me/5511983316372?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20forro%20PVC%20amadeirado" class="btn-whatsapp" rel="noopener" target="_blank">
                 SOLICITAR ORÇAMENTO GRÁTIS
             </a>
@@ -233,6 +266,19 @@
                 <p>Esqueça o visual simples do plástico branco comum. O Forro PVC Amadeirado traz o aconchego e o requinte da madeira natural para o ambiente, sendo a escolha perfeita para quem busca valorizar residências, varandas gourmet, escritórios e salas comerciais em Botucatu e região de forma rápida e muito mais barata do que as estruturas tradicionais.</p>
             </div>
 
+            <!-- Bloco Otimizado com Palavras-Chave Secundárias de Alto Volume -->
+            <div class="card">
+                <h2>Forro PVC Amadeirado para Residências e Comércios</h2>
+                <p>Nossa equipe projeta a aplicação do material adaptando-se perfeitamente às exigências visuais e térmicas de cada cômodo. Trabalhamos com modelos específicos para cada necessidade de projeto:</p>
+                <ul>
+                    <li><strong>Forro PVC amadeirado para sala:</strong> Cria uma atmosfera acolhedora e elegante, combinando perfeitamente com projetos de iluminação embutida em LED.</li>
+                    <li><strong>Forro PVC amadeirado para quarto:</strong> Proporciona excelente conforto visual e sofisticação para áreas de descanso.</li>
+                    <li><strong>Forro PVC amadeirado para varanda:</strong> Resistente às ações do tempo e ventos, ideal para beirais e tetos externos protegidos.</li>
+                    <li><strong>Forro PVC amadeirado residencial:</strong> A alternativa inteligente para cobrir casas inteiras com rapidez e excelente custo-benefício.</li>
+                    <li><strong>Forro PVC amadeirado comercial:</strong> Sofisticação e alta durabilidade sob medida para escritórios, consultórios, lojas e recepções.</li>
+                </ul>
+            </div>
+
             <div class="card">
                 <h2>Instalação de Forro PVC Amadeirado</h2>
                 <p>A montagem executada pela <strong>Drywall Victorino</strong> segue rigorosos padrões de alinhamento e fixação estrutural. Utilizamos perfis de sustentação firmes para garantir que as lâminas fiquem bem travadas e não cedam com o passar dos anos. Entregamos o projeto completo, cuidando desde as marcações de nível até o acabamento fino dos cantos e molduras.</p>
@@ -242,10 +288,20 @@
                 <h2>Vantagens do Forro PVC que imita Madeira</h2>
                 
                 <h3>🛡️ Resistência Máxima à Umidade e Pragas</h3>
-                <p>Diferente da madeira natural, o PVC amadeirado não mofa, não apodrece e é 100% resistente contra cupins e brocas. É o acabamento ideal para salas e quartos, mas também para áreas externas cobertas, beirais e varandas.</p>
+                <p>Diferente da madeira natural, o PVC amadeirado não mofa, não apodrece e é 100% resistente contra cupins e brocas. É o acabamento ideal para áreas internas, mas também para áreas externas cobertas, beirais e varandas.</p>
                 
                 <h3>✨ Visual Contínuo e Praticidade</h3>
                 <p>O material conta com acabamento de junta seca (encaixe perfeito que esconde as emendas das placas) e reproduz com riqueza de detalhes os veios de madeiras nobres como Mogno e Imbuia. Além disso, a limpeza é simples, exigindo apenas um pano úmido.</p>
+            </div>
+
+            <div class="card">
+                <h2>Comparação Inteligente: Forro PVC x Gesso</h2>
+                <p>Muitos clientes ficam em dúvida entre colocar gesso ou PVC na reforma. Veja por que o forro de PVC estruturado se destaca:</p>
+                <ul>
+                    <li><strong>Sem quebra-quebra:</strong> A instalação é extremamente limpa, rápida e não gera aquela poeira branca pesada do gesso.</li>
+                    <li><strong>Manutenção zero:</strong> O gesso pode trincar com vibrações ou amarelar com o tempo, necessitando de nova pintura. O PVC amadeirado mantém a cor e o brilho originais sem pintura.</li>
+                    <li><strong>Imunidade à água:</strong> Se houver um pequeno vazamento no telhado, o gesso amolece e cai. O PVC resiste totalmente à água.</li>
+                </ul>
             </div>
 
             <div class="card">
@@ -258,24 +314,54 @@
                 <h2>Projetos Realizados pela Drywall Victorino</h2>
                 <p>Confira abaixo a qualidade real das obras de forro que entregamos em Botucatu e região:</p>
                 
-            <!-- Galeria Otimizada com os Nomes Reais das Suas Fotos no GitHub -->
-<!-- Galeria Otimizada com as Suas 5 Fotos (Ajustada para o GitHub) -->
-<div class="galeria">
-    <!-- Foto 1 -->
-    <img src="/imagens/forro-pvc-amadeirado-1.jpg" alt="Instalação de forro PVC amadeirado em residência em Botucatu" title="Forro PVC Amadeirado Residencial" loading="lazy">
-    
-    <!-- Foto 2 -->
-    <img src="/imagens/forro%20de%20pvc%20casa%203.jfif" alt="Detalhe do acabamento de forro PVC imitando madeira na região de Botucatu" title="Acabamento Forro PVC Imitação Madeira" loading="lazy">
-    
-    <!-- Foto 3 -->
-    <img src="/imagens/forro-pvc-amadeirado%203.jpg" alt="Forro PVC amadeirado instalado em varanda gourmet em Botucatu" title="Forro PVC Amadeirado Área Gourmet" loading="lazy">
-    
-    <!-- Foto 4 -->
-    <img src="/imagens/forro%20de%20pvc%20casa%205.jfif" alt="Forro PVC amadeirado com iluminação embutida de LED realizado pela Drywall Victorino" title="Forro PVC Amadeirado com Iluminação LED" loading="lazy">
+                <!-- Galeria Otimizada com os Nomes Reais das Suas Fotos no GitHub -->
+                <div class="galeria">
+                    <!-- Foto 1 -->
+                    <img src="/imagens/forro-pvc-amadeirado-1.jpg" alt="Instalação de forro PVC amadeirado em residência em Botucatu" title="Forro PVC Amadeirado Residencial" loading="lazy">
+                    
+                    <!-- Foto 2 -->
+                    <img src="/imagens/forro%20de%20pvc%20casa%203.jfif" alt="Detalhe do acabamento de forro PVC imitando madeira na região de Botucatu" title="Acabamento Forro PVC Imitação Madeira" loading="lazy">
+                    
+                    <!-- Foto 3 -->
+                    <img src="/imagens/forro-pvc-amadeirado%203.jpg" alt="Forro PVC amadeirado instalado em varanda gourmet em Botucatu" title="Forro PVC Amadeirado Área Gourmet" loading="lazy">
+                    
+                    <!-- Foto 4 -->
+                    <img src="/imagens/forro%20de%20pvc%20casa%205.jfif" alt="Forro PVC amadeirado com iluminação embutida de LED realizado pela Drywall Victorino" title="Forro PVC Amadeirado com Iluminação LED" loading="lazy">
 
-    <!-- Foto 5 (Nova - ChatGPT Image com caracteres corrigidos para o código) -->
-    <img src="/imagens/ChatGPT%20Image%2024%20de%20mai.%20de%202026%2C%2000_07_37.png" alt="Acabamento premium de forro PVC amadeirado em Botucatu" title="Forro PVC Amadeirado Premium" loading="lazy">
-</div>
+                    <!-- Foto 5 -->
+                    <img src="/imagens/ChatGPT%20Image%2024%20de%20mai.%20de%202026%2C%2000_07_37.png" alt="Acabamento premium de forro PVC amadeirado em Botucatu" title="Forro PVC Amadeirado Premium" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Bloco Multimídia: Vídeo de Demonstração (YouTube) -->
+            <div class="card">
+                <h2>Veja Nosso Trabalho em Ação</h2>
+                <p>Assista a um breve demonstrativo da agilidade de montagem e do acabamento rigoroso que aplicamos em cada lâmina de PVC colocado:</p>
+                <div class="video-container">
+                    <!-- Substitua o ID 'SEU_ID_DO_VIDEO_AQUI' pelo ID real do seu vídeo do YouTube -->
+                    <iframe src="https://www.youtube.com/embed/SEU_ID_DO_VIDEO_AQUI" title="Instalação Profissional de Forro PVC Amadeirado - Drywall Victorino" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Bloco de Depoimentos Reais dos Clientes -->
+            <div class="card">
+                <h2>O que nossos clientes dizem</h2>
+                
+                <div class="review-item">
+                    <p>⭐⭐⭐⭐⭐ <strong>Tatiane Calazans:</strong> "Melhor empresa de forro de PVC em Botucatu! Contratei para fazer a instalação de forro de PVC na minha casa inteira. Trabalho bem feito, dentro do prazo e com acabamento impecável."</p>
+                </div>
+
+                <div class="review-item">
+                    <p>⭐⭐⭐⭐⭐ <strong>Izabel Costa:</strong> "Gostei muito do serviço! Profissional competente, caprichoso e compromissado. Hoje em dia, está difícil encontrar profissionais com palavra. Preço justo."</p>
+                </div>
+
+                <div class="review-item">
+                    <p>⭐⭐⭐⭐⭐ <strong>Bety Santos:</strong> "Precisei de um orçamento de forro de PVC em Botucatu e o pessoal da Drywall Victorino foi super rápido no atendimento."</p>
+                </div>
+
+                <div class="review-item">
+                    <p>⭐⭐⭐⭐⭐ <strong>Renan Kaique:</strong> "Contratei a Drywall Victorino para instalação de forro PVC em Botucatu e fiquei muito satisfeito com o resultado."</p>
+                </div>
             </div>
 
             <!-- Bloco de Confiança Conectando ao Perfil do Google Meu Negócio -->
@@ -292,7 +378,7 @@
             <div class="card">
                 <h2>Atendimento em Todos os Bairros de Botucatu e Região</h2>
                 <p>Garantimos rapidez na visita técnica para medições e orçamentos. Atendemos com veículo próprio as cidades de <strong>Botucatu, Rubião Júnior, São Manuel, Pardinho, Itatinga e Bofete</strong>.</p>
-                <p><strong>Bairros com atendimento rápido em Botucatu:</strong> Centro, Vila dos Lavradores, Jardim Paraíso, Lavapés, Cohab, Rubião Júnior, Jardim Brasil, Jardim Aeroporto, Altos do Paraíso, Vila Maria, Vila Rodrigues e condomínios fechados.</p>
+                <p><strong>Bairros com atendimento rápido em Botucatu:</strong> Centro, Vila dos Lavradores, Jardim Paraíso, Lavapés, Cohab, Jardim Brasil, Jardim Aeroporto, Altos do Paraíso, Vila Maria, Vila Rodrigues, Comerciários e condomínios fechados da região.</p>
             </div>
 
             <div class="card">
@@ -311,8 +397,8 @@
             <div class="card">
                 <h2>Outros Serviços Especializados</h2>
                 <ul>
-                    <li><a href="/forro-pvc/botucatu/">Forro PVC Tradicional em Botucatu</a></li>
-                    <li><a href="/drywallvictorino.com.br/">Paredes e Forros de Drywall em Botucatu</a></li>
+                    <li><a href="/forro-pvc/">Forro PVC Tradicional em Botucatu</a></li>
+                    <li><a href="/">Paredes e Forros de Drywall em Botucatu</a></li>
                     <li><a href="/forro-gesso/botucatu/">Forro de Gesso Decorado em Botucatu</a></li>
                 </ul>
             </div>
@@ -332,7 +418,7 @@
         </div>
     </footer>
 
-    <!-- Schema JSON-LD FAQPage (Sincronizado perfeitamente com o texto) -->
+    <!-- Schema JSON-LD FAQPage -->
     <script type="application/ld+json">
     {
      "@context":"https://schema.org",
