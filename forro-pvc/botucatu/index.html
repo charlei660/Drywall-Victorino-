@@ -42,7 +42,7 @@
 
     <p>A <strong>Drywall Victorino</strong> é uma empresa especializada em instalação de forro PVC em Botucatu e região. Trabalhamos com forro PVC residencial, comercial, área gourmet, cozinha, banheiro e varanda, oferecendo instalação rápida, acabamento profissional e garantia de satisfação.</p>
 
-    <a href="https://wa.me/5511983316372?text=Olá,%20vi%20o%20site%20e%20gostaria%20de%20um%20orçamento%20de%20forro%20PVC." class="btn-cta">
+    <a href="https://wa.me/5511983316372?text=Olá,%20vi%20o%20site%20e%20gostaria%20de%20um%20orçamento%20de%20forro%20PVC." class="btn-cta" onclick="dispararConversaoWhatsApp()">
         <i class="fab fa-whatsapp"></i> Solicitar Orçamento Sem Compromisso
     </a>
     <a href="tel:+5511983316372" class="btn-cta btn-ligar">
@@ -119,13 +119,13 @@
         <h2>Peça Seu Orçamento Hoje</h2>
         <p style="color:var(--cor-primaria);">🔒 Atendimento profissional • Orçamento sem compromisso • Garantia de satisfação</p>
         <p>Envie uma mensagem agora e receba atendimento rápido da melhor empresa de forro PVC na região.</p>
-        <a href="https://wa.me/5511983316372?text=Olá,%20gostaria%20de%20um%20orçamento%20de%20forro%20PVC." class="btn-cta">
+        <a href="https://wa.me/5511983316372?text=Olá,%20vi%20o%20site%20e%20gostaria%20de%20um%20orçamento%20de%20forro%20PVC." class="btn-cta" onclick="dispararConversaoWhatsApp()">
             <i class="fab fa-whatsapp"></i> Solicitar Orçamento
         </a>
     </div>
 </div>
 
-<a href="https://wa.me/5511983316372?text=Olá,%20gostaria%20de%20um%20orçamento%20de%20forro%20PVC." class="floating-whatsapp">
+<a href="https://wa.me/5511983316372?text=Olá,%20vi%20o%20site%20e%20gostaria%20de%20um%20orçamento%20de%20forro%20PVC." class="floating-whatsapp" onclick="dispararConversaoWhatsApp()">
     <i class="fab fa-whatsapp"></i> <span>Orçamento</span>
 </a>
 
@@ -144,6 +144,8 @@
    "addressCountry":"BR"
  }
 }
+</script>
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18137133953"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -154,12 +156,13 @@ gtag('config', 'AW-18137133953');
 gtag('config', 'G-XC6XCXEHC1');
 
 function dispararConversaoWhatsApp() {
-  gtag('event', 'conversion', {
-    'send_to': 'AW-18137133953/EKMnCNK2obUcEIHnushD'
-  });
+  if (typeof gtag === 'function') {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-18137133953/EKMnCNK2obUcEIHnushD'
+    });
+  }
 }
 </script>
-
 
 </body>
 </html>
