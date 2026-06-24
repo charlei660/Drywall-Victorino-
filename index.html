@@ -58,16 +58,8 @@
       gtag('config', 'G-XC6XCXEHC1');
     </script>
 
+    <!-- FUNÇÃO CORRIGIDA: Envia simultaneamente para Google Ads e GA4 -->
     <script>
-    function dispararConversaoWhatsApp() {
-      console.log('Conversão disparada');
-      if (typeof gtag === 'function') {
-        gtag('event', 'conversion', {
-          'send_to': 'AW-18137133953/EKMnCNK2obUcEIHnushD'
-        });
-      }
-    }
-    </script><script>
     function dispararConversaoWhatsApp() {
       console.log('Conversão disparada');
       
