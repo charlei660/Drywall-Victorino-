@@ -67,6 +67,23 @@
         });
       }
     }
+    </script><script>
+    function dispararConversaoWhatsApp() {
+      console.log('Conversão disparada');
+      
+      if (typeof gtag === 'function') {
+        // 1. Mantém a conversão atual do Google Ads
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18137133953/EKMnCNK2obUcEIHnushD'
+        });
+
+        // 2. NOVO: Envia o evento personalizado para o GA4
+        gtag('event', 'whatsapp_click', {
+          'event_category': 'lead',
+          'event_label': 'forro pvc' 
+        });
+      }
+    }
     </script>
 
     <script type="application/ld+json">
