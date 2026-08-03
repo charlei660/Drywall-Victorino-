@@ -10,23 +10,112 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <style>
-        :root { --cor-fundo: #000000; --cor-card: #121212; --cor-borda: #222222; --cor-primaria: #f4c400; --cor-texto: #ffffff; --cor-whatsapp: #25d366; --cor-ligar: #007bff; }
-        body { background-color: var(--cor-fundo); color: var(--cor-texto); font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; line-height: 1.6; }
-        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
-        header { text-align: center; padding: 20px 0; }
-        h1 { color: var(--cor-primaria); font-size: 2rem; margin-bottom: 10px; }
-        h2 { color: var(--cor-primaria); font-size: 1.5rem; margin-top: 30px; }
-        .btn-cta { display: block; background-color: var(--cor-whatsapp); color: #fff; text-align: center; padding: 18px; border-radius: 50px; font-weight: bold; font-size: 1.1rem; margin: 25px 0; text-decoration: none; transition: transform 0.3s; }
-        .btn-ligar { background-color: var(--cor-ligar); margin-top: -15px; }
-        .btn-cta:hover { transform: scale(1.03); }
-        .card { background: var(--cor-card); padding: 25px; border-radius: 10px; margin: 20px 0; border: 1px solid var(--cor-borda); }
-        .card h2 { margin-top: 0; }
-        .grid-fotos { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 15px; }
-        .grid-fotos img { width: 100%; height: 120px; object-fit: cover; border-radius: 5px; }
-        .floating-whatsapp { position: fixed; bottom: 20px; right: 20px; background: var(--cor-whatsapp); color: #fff; padding: 15px 20px; border-radius: 50px; z-index: 1000; font-size: 1.2rem; box-shadow: 0 4px 10px rgba(0,0,0,0.5); display: flex; align-items: center; gap: 8px; text-decoration: none; }
-        .review-item { margin-bottom: 15px; border-bottom: 1px solid var(--cor-borda); padding-bottom: 15px; }
-        .review-item:last-child { border-bottom: none; padding-bottom: 0; }
-        @media (max-width: 600px) { h1 { font-size: 1.5rem; } .grid-fotos img { height: 100px; } }
+        :root { 
+            --cor-fundo: #000000; 
+            --cor-card: #121212; 
+            --cor-borda: #222222; 
+            --cor-primaria: #f4c400; 
+            --cor-texto: #ffffff; 
+            --cor-whatsapp: #25d366; 
+            --cor-ligar: #007bff; 
+        }
+        body { 
+            background-color: var(--cor-fundo); 
+            color: var(--cor-texto); 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            line-height: 1.6; 
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px; 
+        }
+        header { 
+            text-align: center; 
+            padding: 20px 0; 
+        }
+        h1 { 
+            color: var(--cor-primaria); 
+            font-size: 2rem; 
+            margin-bottom: 10px; 
+        }
+        h2 { 
+            color: var(--cor-primaria); 
+            font-size: 1.5rem; 
+            margin-top: 30px; 
+        }
+        .btn-cta { 
+            display: block; 
+            background-color: var(--cor-whatsapp); 
+            color: #fff; 
+            text-align: center; 
+            padding: 18px; 
+            border-radius: 50px; 
+            font-weight: bold; 
+            font-size: 1.1rem; 
+            margin: 25px 0; 
+            text-decoration: none; 
+            transition: transform 0.3s; 
+        }
+        .btn-ligar { 
+            background-color: var(--cor-ligar); 
+            margin-top: -15px; 
+        }
+        .btn-cta:hover { 
+            transform: scale(1.03); 
+        }
+        .card { 
+            background: var(--cor-card); 
+            padding: 25px; 
+            border-radius: 10px; 
+            margin: 20px 0; 
+            border: 1px solid var(--cor-borda); 
+        }
+        .card h2 { 
+            margin-top: 0; 
+        }
+        .grid-fotos { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 10px; 
+            margin-top: 15px; 
+        }
+        .grid-fotos img { 
+            width: 100%; 
+            height: 120px; 
+            object-fit: cover; 
+            border-radius: 5px; 
+        }
+        .floating-whatsapp { 
+            position: fixed; 
+            bottom: 20px; 
+            right: 20px; 
+            background: var(--cor-whatsapp); 
+            color: #fff; 
+            padding: 15px 20px; 
+            border-radius: 50px; 
+            z-index: 1000; 
+            font-size: 1.2rem; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5); 
+            display: flex; 
+            align-items: center; 
+            gap: 8px; 
+            text-decoration: none; 
+        }
+        .review-item { 
+            margin-bottom: 15px; 
+            border-bottom: 1px solid var(--cor-borda); 
+            padding-bottom: 15px; 
+        }
+        .review-item:last-child { 
+            border-bottom: none; 
+            padding-bottom: 0; 
+        }
+        @media (max-width: 600px) { 
+            h1 { font-size: 1.5rem; } 
+            .grid-fotos img { height: 100px; } 
+        }
     </style>
 </head>
 <body>
@@ -42,7 +131,8 @@
 
     <p>A <strong>Drywall Victorino</strong> é uma empresa especializada em instalação de forro PVC em Botucatu e região. Trabalhamos com forro PVC residencial, comercial, área gourmet, cozinha, banheiro e varanda, oferecendo instalação rápida, acabamento profissional e garantia de satisfação.</p>
 
-    <a href="https://wa.me/5511983316372?text=Olá,%20vi%20o%20site%20e%20gostaria%20de%20um%20orçamento%20de%20forro%20PVC." class="btn-cta" onclick="dispararConversaoWhatsApp()">
+    <!-- Alteração 1: Botão CTA Principal -->
+    <a href="https://wa.me/5511983316372?text=Olá,%20vi%20o%20site%20e%20gostaria%20de%20um%20orçamento%20de%20forro%20PVC." class="btn-cta" onclick="dispararConversaoWhatsApp(event)">
         <i class="fab fa-whatsapp"></i> Solicitar Orçamento Sem Compromisso
     </a>
     <a href="tel:+5511983316372" class="btn-cta btn-ligar">
@@ -119,13 +209,16 @@
         <h2>Peça Seu Orçamento Hoje</h2>
         <p style="color:var(--cor-primaria);">🔒 Atendimento profissional • Orçamento sem compromisso • Garantia de satisfação</p>
         <p>Envie uma mensagem agora e receba atendimento rápido da melhor empresa de forro PVC na região.</p>
-        <a href="https://wa.me/5511983316372?text=Olá,%20vi%20o%20site%20e%20gostaria%20de%20um%20orçamento%20de%20forro%20PVC." class="btn-cta" onclick="dispararConversaoWhatsApp()">
+        
+        <!-- Alteração 2: Botão CTA Final -->
+        <a href="https://wa.me/5511983316372?text=Olá,%20vi%20o%20site%20e%20gostaria%20de%20um%20orçamento%20de%20forro%20PVC." class="btn-cta" onclick="dispararConversaoWhatsApp(event)">
             <i class="fab fa-whatsapp"></i> Solicitar Orçamento
         </a>
     </div>
 </div>
 
-<a href="https://wa.me/5511983316372?text=Olá,%20vi%20o%20site%20e%20gostaria%20de%20um%20orçamento%20de%20forro%20PVC." class="floating-whatsapp" onclick="dispararConversaoWhatsApp()">
+<!-- Alteração 3: Botão Flutuante do WhatsApp -->
+<a href="https://wa.me/5511983316372?text=Olá,%20vi%20o%20site%20e%20gostaria%20de%20um%20orçamento%20de%20forro%20PVC." class="floating-whatsapp" onclick="dispararConversaoWhatsApp(event)">
     <i class="fab fa-whatsapp"></i> <span>Orçamento</span>
 </a>
 
@@ -148,20 +241,33 @@
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18137133953"></script>
 <script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-gtag('config', 'AW-18137133953');
-gtag('config', 'G-XC6XCXEHC1');
+  gtag('config', 'AW-18137133953');
+  gtag('config', 'G-XC6XCXEHC1');
 
-function dispararConversaoWhatsApp() {
-  if (typeof gtag === 'function') {
-    gtag('event', 'conversion', {
-      'send_to': 'AW-18137133953/EKMnCNK2obUcEIHnushD'
-    });
+  // Alteração na Função JavaScript para lidar com callback de redirecionamento
+  function dispararConversaoWhatsApp(e) {
+    if (e) e.preventDefault();
+
+    const url = "https://wa.me/5511983316372?text=Olá,%20vi%20o%20site%20e%20gostaria%20de%20um%20orçamento%20de%20forro%20PVC.";
+
+    const callback = function () {
+        window.location.href = url;
+    };
+
+    if (typeof gtag === 'function') {
+      gtag('event', 'conversion', {
+          'send_to': 'AW-18137133953/EKMnCNK2obUcEIHnushD',
+          'event_callback': callback
+      });
+      setTimeout(callback, 1000);
+    } else {
+      callback();
+    }
   }
-}
 </script>
 
 </body>
