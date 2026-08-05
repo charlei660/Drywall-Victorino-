@@ -5,8 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forro PVC em Botucatu | Empresa Especializada | Drywall Victorino</title>
     <meta name="description" content="A Drywall Victorino é especialista em instalação de forro PVC em Botucatu e região. Preço justo, acabamento impecável e serviço rápido para residências e comércios.">
+    <meta name="robots" content="index, follow">
     
-    <link rel="icon" type="image/png" href="../../imagens/favicon.png">
+    <!-- Pré-conexão para otimização de performance -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+
+    <!-- URL Canônica -->
+    <link rel="canonical" href="https://drywallvictorino.com.br/forro-pvc/botucatu/">
+    
+    <!-- Open Graph (Compartilhamento WhatsApp e Redes Sociais) -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Drywall Victorino">
+    <meta property="og:title" content="Forro PVC em Botucatu | Drywall Victorino">
+    <meta property="og:description" content="Instalação profissional de forro PVC em Botucatu. Solicite seu orçamento sem compromisso.">
+    <meta property="og:image" content="https://drywallvictorino.com.br/imagens/forro%20de%20pvc.png">
+    <meta property="og:url" content="https://drywallvictorino.com.br/forro-pvc/botucatu/">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Forro PVC em Botucatu | Drywall Victorino">
+    <meta name="twitter:description" content="Instalação profissional de forro PVC em Botucatu. Solicite seu orçamento sem compromisso.">
+    <meta name="twitter:image" content="https://drywallvictorino.com.br/imagens/forro%20de%20pvc.png">
+
+    <!-- Favicon com Caminho Absoluto -->
+    <link rel="icon" type="image/png" href="/imagens/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <style>
@@ -33,7 +57,7 @@
         }
         header { 
             text-align: center; 
-            padding: 20px 0; 
+            padding: 10px 0 20px 0; 
         }
         h1 { 
             color: var(--cor-primaria); 
@@ -44,6 +68,20 @@
             color: var(--cor-primaria); 
             font-size: 1.5rem; 
             margin-top: 30px; 
+        }
+        h3 {
+            color: var(--cor-primaria);
+            font-size: 1.2rem;
+            margin-top: 20px;
+        }
+        .breadcrumb {
+            font-size: 0.85rem;
+            margin-bottom: 15px;
+            color: #888;
+        }
+        .breadcrumb a {
+            color: var(--cor-primaria);
+            text-decoration: none;
         }
         .btn-cta { 
             display: block; 
@@ -72,7 +110,7 @@
             margin: 20px 0; 
             border: 1px solid var(--cor-borda); 
         }
-        .card h2 { 
+        .card h2, .card h3 { 
             margin-top: 0; 
         }
         .grid-fotos { 
@@ -112,22 +150,188 @@
             border-bottom: none; 
             padding-bottom: 0; 
         }
+        .links-internos-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .links-internos-grid a {
+            background: var(--cor-borda);
+            color: var(--cor-texto);
+            padding: 12px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: block;
+            text-align: center;
+            transition: background 0.2s;
+        }
+        .links-internos-grid a:hover {
+            background: var(--cor-primaria);
+            color: #000;
+            font-weight: bold;
+        }
         @media (max-width: 600px) { 
             h1 { font-size: 1.5rem; } 
             .grid-fotos img { height: 100px; } 
+            .links-internos-grid { grid-template-columns: 1fr; }
         }
     </style>
+
+    <!-- Schema JSON-LD Unificado (WebSite + Organization + LocalBusiness + Service + FAQPage) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://drywallvictorino.com.br/#website",
+          "url": "https://drywallvictorino.com.br",
+          "name": "Drywall Victorino"
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://drywallvictorino.com.br/#organization",
+          "name": "Drywall Victorino",
+          "url": "https://drywallvictorino.com.br",
+          "logo": "https://drywallvictorino.com.br/imagens/logo.png"
+        },
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://drywallvictorino.com.br/#localbusiness",
+          "name": "Drywall Victorino",
+          "url": "https://drywallvictorino.com.br",
+          "image": "https://drywallvictorino.com.br/imagens/forro%20de%20pvc.png",
+          "priceRange": "$$",
+          "telephone": "+5511983316372",
+          "openingHours": "Mo-Sa 08:00-18:00",
+          "areaServed": ["Botucatu", "São Manuel", "Pardinho", "Bofete", "Itatinga", "Avaré"],
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Botucatu",
+            "addressRegion": "SP",
+            "addressCountry": "BR"
+          }
+        },
+        {
+          "@type": "Service",
+          "name": "Instalação de Forro PVC em Botucatu",
+          "provider": {
+            "@id": "https://drywallvictorino.com.br/#organization"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Botucatu"
+          },
+          "description": "Instalação profissional de forro PVC residencial, comercial, amadeirado e liso em Botucatu e região."
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Qual o preço do m² do forro de PVC?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "O valor exato depende da metragem, modelo do PVC e complexidade da estrutura. Fale conosco para receber os valores atualizados."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Quanto tempo demora a instalação?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Na maioria dos ambientes residenciais, concluímos a colocação do forro em apenas 1 a 2 dias."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Vocês parcelam o pagamento?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim, facilitamos o seu projeto e aceitamos pagamento parcelado no cartão de crédito."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Vocês atendem comércios e empresas?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim, fazemos montagens completas de forro PVC para escritórios, salões, lojas, igrejas e galpões."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "O forro PVC ajuda a isolar o calor?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim, ele ajuda a reduzir a temperatura interna do ambiente. Para um desempenho ainda melhor, oferecemos a opção de instalação conjunta com mantas térmicas protetoras."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <!-- Google Tag / Analytics + Google Ads -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XC6XCXEHC1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XC6XCXEHC1');
+      gtag('config', 'AW-18137133953');
+
+      function dispararConversaoWhatsApp(e) {
+        if (e) e.preventDefault();
+
+        const url = "https://wa.me/5511983316372?text=Olá,%20vi%20o%20site%20e%20gostaria%20de%20um%20orçamento%20de%20forro%20PVC.";
+
+        const callback = function () {
+            window.location.href = url;
+        };
+
+        if (typeof gtag === 'function') {
+          gtag('event', 'conversion', {
+              'send_to': 'AW-18137133953/EKMnCNK2obUcEIHnushD',
+              'event_callback': callback
+          });
+          setTimeout(callback, 1000);
+        } else {
+          callback();
+        }
+      }
+    </script>
 </head>
 <body>
 
 <div class="container">
+    <!-- Breadcrumb Navegação -->
+    <nav aria-label="breadcrumb" class="breadcrumb">
+        <a href="/">Início</a> &gt; 
+        <a href="/forro-pvc/">Forro PVC</a> &gt; 
+        <span>Botucatu</span>
+    </nav>
+
     <header>
         <a href="/" style="color: var(--cor-primaria); text-decoration: none; font-weight: bold;">Drywall Victorino</a>
         <h1>Forro PVC em Botucatu</h1>
         <p>Instalação profissional, rápida e com acabamento impecável.</p>
     </header>
 
-    <img src="/imagens/forro de pvc.png" alt="Instalação de forro PVC em Botucatu - Drywall Victorino" style="width:100%;border-radius:10px;margin-bottom:20px;">
+    <!-- Imagem Hero Otimizada para LCP -->
+    <img 
+        src="/imagens/forro de pvc.png" 
+        width="800" 
+        height="450" 
+        loading="eager" 
+        fetchpriority="high" 
+        alt="Instalação profissional de forro PVC branco instalado em teto residencial em Botucatu" 
+        style="width:100%; height:auto; border-radius:10px; margin-bottom:20px;"
+    >
 
     <p>A <strong>Drywall Victorino</strong> é uma empresa especializada em instalação de forro PVC em Botucatu e região. Trabalhamos com forro PVC residencial, comercial, área gourmet, cozinha, banheiro e varanda, oferecendo instalação rápida, acabamento profissional e garantia de satisfação.</p>
 
@@ -149,6 +353,20 @@
         </ul>
     </div>
 
+    <!-- Aplicações por Cômodo -->
+    <div class="card">
+        <h2>Aplicações do Forro PVC por Ambiente</h2>
+        
+        <h3>Forro PVC para Banheiro e Cozinha</h3>
+        <p>Por ser 100% impermeável e imune à umidade gerada por vapores e gorduras, o forro de PVC é a escolha ideal para cozinhas, lavanderias e banheiros. Não embola, não mofa e pode ser higienizado facilmente apenas com água e sabão neutro.</p>
+        
+        <h3>Forro PVC para Sala e Quartos</h3>
+        <p>Com régua frisada ou lisa na cor branca, o forro PVC traz uma iluminação uniforme e visual limpo para salas de estar e dormitórios. Permite a integração perfeita com luminárias embutidas de LED (plafons e spots).</p>
+        
+        <h3>Forro PVC Amadeirado para Varanda e Área Gourmet</h3>
+        <p>Para quem busca elegância sem a manutenção trabalhosa da madeira natural, o forro PVC amadeirado combina sofisticação estética com total resistência contra pragas (como cupins) e intempéries da área externa coberta.</p>
+    </div>
+
     <div class="card">
         <h2>Modelos e Aplicações</h2>
         <p>Contamos com mão de obra especializada como instalador de forro PVC em Botucatu para diferentes projetos:</p>
@@ -161,12 +379,37 @@
 
     <h2>Fotos de Nossos Trabalhos</h2>
     <div class="grid-fotos">
-        <a href="/imagens/forro de pvc.png" target="_blank"><img src="/imagens/forro de pvc.png" alt="Instalação de Forro PVC Botucatu" loading="lazy"></a>
-        <a href="/imagens/forro de pvc casa.jfif" target="_blank"><img src="/imagens/forro de pvc casa.jfif" alt="Forro PVC Residencial Botucatu" loading="lazy"></a>
-        <a href="/imagens/forro de pvc area gourment.jfif" target="_blank"><img src="/imagens/forro de pvc area gourment.jfif" alt="Forro PVC Área Gourmet Botucatu" loading="lazy"></a>
-        <a href="/imagens/forro de pvc casa 3.jfif" target="_blank"><img src="/imagens/forro de pvc casa 3.jfif" alt="Forro PVC para Sala" loading="lazy"></a>
-        <a href="/imagens/forro de pvc casa 5.jfif" target="_blank"><img src="/imagens/forro de pvc casa 5.jfif" alt="Forro PVC Moderno em Botucatu" loading="lazy"></a>
-        <a href="/imagens/ChatGPT Image 24 de mai. de 2026, 00_07_37.png" target="_blank"><img src="/imagens/ChatGPT Image 24 de mai. de 2026, 00_07_37.png" alt="Forro PVC Amadeirado Botucatu" loading="lazy"></a>
+        <a href="/imagens/forro de pvc.png" target="_blank"><img src="/imagens/forro de pvc.png" alt="Instalação de Forro PVC branco em sala em Botucatu" loading="lazy"></a>
+        <a href="/imagens/forro de pvc casa.jfif" target="_blank"><img src="/imagens/forro de pvc casa.jfif" alt="Forro PVC Residencial instalado em teto de casa em Botucatu" loading="lazy"></a>
+        <a href="/imagens/forro de pvc area gourment.jfif" target="_blank"><img src="/imagens/forro de pvc area gourment.jfif" alt="Forro PVC amadeirado instalado em área gourmet em Botucatu" loading="lazy"></a>
+        <a href="/imagens/forro de pvc casa 3.jfif" target="_blank"><img src="/imagens/forro de pvc casa 3.jfif" alt="Forro PVC para sala de estar com iluminação de LED em Botucatu" loading="lazy"></a>
+        <a href="/imagens/forro de pvc casa 5.jfif" target="_blank"><img src="/imagens/forro de pvc casa 5.jfif" alt="Acabamento moderno de forro PVC em residência em Botucatu" loading="lazy"></a>
+        <a href="/imagens/ChatGPT Image 24 de mai. de 2026, 00_07_37.png" target="_blank"><img src="/imagens/ChatGPT Image 24 de mai. de 2026, 00_07_37.png" alt="Detalhe do acabamento do Forro PVC Amadeirado em Botucatu" loading="lazy"></a>
+    </div>
+
+    <!-- PVC vs Gesso -->
+    <div class="card">
+        <h2>Diferença entre Forro PVC e Gesso</h2>
+        <p>Muitos clientes têm dúvidas entre instalar forro de PVC ou gesso drywall. Veja as principais vantagens de optar pelo PVC:</p>
+        <ul>
+            <li><strong>Resistência à Água:</strong> O PVC não sofre danos em caso de eventuais vazamentos no telhado, enquanto o gesso tradicional apodrece ou ganha manchas amarelas.</li>
+            <li><strong>Obra Rápida e Sem Sujeira:</strong> A instalação do forro PVC é seca e não gera o pó fino característico do lixamento do gesso.</li>
+            <li><strong>Sem Necessidade de Pintura:</strong> As lâminas vêm prontas de fábrica, economizando o custo de contratação de pintores e compra de tintas.</li>
+            <li><strong>Custo-Benefício:</strong> O valor total por m² instalado costuma ser significativamente inferior comparado às soluções estruturadas de gesso.</li>
+        </ul>
+    </div>
+
+    <!-- Processo de Instalação e Garantia -->
+    <div class="card">
+        <h2>Como Funciona a Instalação e Qual a Garantia?</h2>
+        <p>A montagem do forro PVC é dividida em etapas simples e organizadas:</p>
+        <ol>
+            <li><strong>Estruturação:</strong> Fixação do nível perimetral e montagem dos metalons/perfis metálicos de sustentação.</li>
+            <li><strong>Isolamento (Opcional):</strong> Aplicação de manta térmica para redução de calor e ruído, se solicitado pelo cliente.</li>
+            <li><strong>Encaixe das Réguas:</strong> Montagem das lâminas de PVC com encaixe macho/fêmea de precisão.</li>
+            <li><strong>Acabamento:</strong> Instalação de rodaforros e sancas perimetrais para um arremate perfeito junto às paredes.</li>
+        </ol>
+        <p><strong>Garantia de Qualidade:</strong> Na Drywall Victorino, trabalhamos apenas com materiais normatizados e resistentes ao fogo (autoextinguíveis). Todos os nossos serviços contam com garantia de instalação técnica.</p>
     </div>
 
     <div class="card">
@@ -205,6 +448,17 @@
         <p><strong>O forro PVC ajuda a isolar o calor?</strong><br>Sim, ele ajuda a reduzir a temperatura interna do ambiente. Para um desempenho ainda melhor, oferecemos a opção de instalação conjunta com mantas térmicas protetoras.</p>
     </div>
 
+    <!-- Bloco de Links Internos (Arquitetura do Site) -->
+    <div class="card">
+        <h2>Outros Serviços Especializados</h2>
+        <div class="links-internos-grid">
+            <a href="/drywall/botucatu/">Drywall e Divisórias</a>
+            <a href="/gesso/botucatu/">Gesso Liso e Decorativo</a>
+            <a href="/divisoria/botucatu/">Divisórias para Escritórios</a>
+            <a href="/eletrica/botucatu/">Instalação Elétrica</a>
+        </div>
+    </div>
+
     <div class="card" style="text-align:center;">
         <h2>Peça Seu Orçamento Hoje</h2>
         <p style="color:var(--cor-primaria);">🔒 Atendimento profissional • Orçamento sem compromisso • Garantia de satisfação</p>
@@ -221,54 +475,6 @@
 <a href="https://wa.me/5511983316372?text=Olá,%20vi%20o%20site%20e%20gostaria%20de%20um%20orçamento%20de%20forro%20PVC." class="floating-whatsapp" onclick="dispararConversaoWhatsApp(event)">
     <i class="fab fa-whatsapp"></i> <span>Orçamento</span>
 </a>
-
-<script type="application/ld+json">
-{
- "@context":"https://schema.org",
- "@type":"LocalBusiness",
- "name":"Drywall Victorino",
- "telephone":"+5511983316372",
- "url":"https://drywallvictorino.com.br",
- "areaServed":["Botucatu", "São Manuel", "Pardinho", "Bofete", "Itatinga", "Avaré"],
- "address":{
-   "@type":"PostalAddress",
-   "addressLocality":"Botucatu",
-   "addressRegion":"SP",
-   "addressCountry":"BR"
- }
-}
-</script>
-
-<!-- Tags Google Ads / Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18137133953"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-18137133953');
-  gtag('config', 'G-XC6XCXEHC1');
-
-  function dispararConversaoWhatsApp(e) {
-    if (e) e.preventDefault();
-
-    const url = "https://wa.me/5511983316372?text=Olá,%20vi%20o%20site%20e%20gostaria%20de%20um%20orçamento%20de%20forro%20PVC.";
-
-    const callback = function () {
-        window.location.href = url;
-    };
-
-    if (typeof gtag === 'function') {
-      gtag('event', 'conversion', {
-          'send_to': 'AW-18137133953/EKMnCNK2obUcEIHnushD',
-          'event_callback': callback
-      });
-      setTimeout(callback, 1000);
-    } else {
-      callback();
-    }
-  }
-</script>
 
 </body>
 </html>
