@@ -7,8 +7,52 @@
     <meta name="description" content="Instalador profissional de Forro PVC Amadeirado em Botucatu e região. Alta durabilidade, imitação perfeita de madeira e orçamento sem compromisso via WhatsApp. Confira!">
     
     <link rel="canonical" href="https://drywallvictorino.com.br/forro-pvc-amadeirado/botucatu/">
-
     <link rel="icon" type="image/png" href="/imagens/favicon.png">
+
+    <!-- Meta Tag Google Search Console -->
+    <meta name="google-site-verification" content="seu-codigo-aqui">
+
+    <!-- Google tag (gtag.js) - Unificado Google Ads + GA4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18137133953"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-18137133953');
+      gtag('config', 'G-XC6XCXEHC1');
+    </script>
+
+    <!-- Função de Disparo Rastreamento WhatsApp -->
+    <script>
+    function dispararConversaoWhatsApp(event) {
+      if (event) event.preventDefault();
+      
+      var targetUrl = "https://wa.me/5511983316372?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20para%20forro%20PVC%20amadeirado";
+      var callbackCalled = false;
+
+      function redirect() {
+        if (!callbackCalled) {
+          callbackCalled = true;
+          window.location.href = targetUrl;
+        }
+      }
+
+      // Fallback de segurança (1s)
+      setTimeout(redirect, 1000);
+
+      // Disparo Google Ads
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18137133953/EKMnCNK2obUcEIHnushD',
+        'event_callback': redirect
+      });
+
+      // Disparo GA4
+      gtag('event', 'whatsapp_click', {
+        'page_location': window.location.href
+      });
+    }
+    </script>
 
     <meta property="og:title" content="Forro PVC Amadeirado em Botucatu | Drywall Victorino">
     <meta property="og:description" content="Instalação profissional de Forro PVC Amadeirado em Botucatu. Acabamento elegante, resistente e durável.">
@@ -130,6 +174,7 @@
             z-index: 1000;
             box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
             transition: background-color 0.3s ease, transform 0.2s ease;
+            cursor: pointer;
         }
         .whatsapp-float:hover {
             background-color: #128c7e;
@@ -215,7 +260,7 @@
 </head>
 <body>
 
-    <a href="https://wa.me/5511983316372?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20forro%20PVC%20amadeirado" class="whatsapp-float" rel="noopener" target="_blank" onclick="dispararConversaoWhatsApp()">
+    <a href="https://wa.me/5511983316372?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20forro%20PVC%20amadeirado" class="whatsapp-float" rel="noopener" target="_blank" onclick="dispararConversaoWhatsApp(event)">
         WhatsApp
     </a>
 
@@ -233,7 +278,7 @@
             </h2>
             <p>A elegância da madeira nobre com a durabilidade e economia do PVC.</p>
             <p style="font-size: 1.05rem; color: #aaa; margin-bottom: 25px;">Também realizamos a instalação de <a href="/forro-pvc/botucatu/">Forro PVC em Botucatu</a> na versão tradicional branca.</p>
-            <a href="https://wa.me/5511983316372?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20forro%20PVC%20amadeirado" class="btn-whatsapp" rel="noopener" target="_blank" onclick="dispararConversaoWhatsApp()">
+            <a href="https://wa.me/5511983316372?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20forro%20PVC%20amadeirado" class="btn-whatsapp" rel="noopener" target="_blank" onclick="dispararConversaoWhatsApp(event)">
                 SOLICITAR ORÇAMENTO GRÁTIS
             </a>
         </div>
@@ -349,7 +394,7 @@
                 <p>Não. A visita no local para tirar as medidas corretas da sua área e a montagem do orçamento detalhado são totalmente gratuitas e sem compromisso.</p>
                 
                 <h3>O material já está incluso no valor do orçamento?</h3>
-                <p>Nós trabalhamos das duas maneiras. Podemos fechar o projeto com toda a estrutura, molduras e placas inclusas, ou você pode comprar o material e nós cobramos apenas a mano de obra de instalação.</p>
+                <p>Nós trabalhamos das duas maneiras. Podemos fechar o projeto com toda a estrutura, molduras e placas inclusas, ou você pode comprar o material e nós cobramos apenas a mão de obra de instalação.</p>
             </div>
 
             <div class="card">
@@ -365,4 +410,11 @@
     </main>
 
     <footer>
-        
+        <div class="container">
+            <p>© Drywall Victorino — Todos os direitos reservados.</p>
+            <p style="font-size: 0.9rem; color: #777; margin-top: 5px;">Botucatu - SP e Região</p>
+        </div>
+    </footer>
+
+</body>
+</html>
