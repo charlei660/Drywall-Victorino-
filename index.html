@@ -3,698 +3,547 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drywall em Botucatu | Gesso, Forro PVC e Elétrica | Drywall Victorino</title>
-    <meta name="description" content="Drywall, gesso, forro PVC, divisórias, sancas e elétrica residencial em Botucatu, São Manuel, Pardinho, Avaré e região.">
+    <title>Forro PVC Amadeirado em Botucatu | Instalação, Preço e Orçamento</title>
+    <meta name="description" content="Instalador profissional de Forro PVC Amadeirado em Botucatu e região. Alta durabilidade, imitação perfeita de madeira e orçamento sem compromisso via WhatsApp. Confira!">
     
-    <link rel="icon" type="image/png" href="imagens/favicon.png">
+    <link rel="canonical" href="https://drywallvictorino.com.br/forro-pvc-amadeirado/botucatu/">
+    <link rel="icon" type="image/png" href="/imagens/favicon.png">
 
-    <!-- ATENÇÃO: Substitua "seu-codigo-aqui" pelo código real do seu Google Search Console -->
+    <!-- Meta Tag Google Search Console -->
     <meta name="google-site-verification" content="seu-codigo-aqui">
 
-    <meta property="og:title" content="Drywall em Botucatu | Drywall Victorino">
-    <meta property="og:description" content="Drywall, Gesso, Forro PVC e Elétrica em Botucatu e Região">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://drywallvictorino.com.br/">
-    <meta property="og:image" content="https://drywallvictorino.com.br/imagens/capa.jpg">
-
-    <link rel="canonical" href="https://drywallvictorino.com.br/">
-    
-    <script type="application/ld+json">
-    {
-      "@context":"https://schema.org",
-      "@type":"HomeAndConstructionBusiness",
-      "name":"Drywall Victorino",
-      "url":"https://drywallvictorino.com.br/",
-      "telephone":"+5511983316372",
-      "areaServed":[
-        "Botucatu",
-        "São Manuel",
-        "Pardinho",
-        "Itatinga",
-        "Bofete",
-        "Avaré",
-        "Lençóis Paulista",
-        "Pratânia"
-      ],
-      "serviceType":[
-        "Drywall",
-        "Gesso",
-        "Forro PVC",
-        "Divisórias",
-        "Sancas",
-        "Instalações Elétricas",
-        "Pintura",
-        "Impermeabilização"
-      ]
-    }
-    </script>
-
+    <!-- Google tag (gtag.js) - Unificado Google Ads + GA4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18137133953"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
+
       gtag('config', 'AW-18137133953');
       gtag('config', 'G-XC6XCXEHC1');
     </script>
 
-    <!-- FUNÇÃO CORRIGIDA: Envia simultaneamente para Google Ads e GA4 -->
+    <!-- RASTREAMENTO DE LEADS WHATSAPP - DRYWALL VICTORINO -->
     <script>
-    function dispararConversaoWhatsApp() {
-      console.log('Conversão disparada');
-      
+    /* ==========================================================
+       RASTREAMENTO DE LEADS WHATSAPP - DRYWALL VICTORINO
+       Preserva GCLID + UTMs e identifica serviço/local do botão
+       ========================================================== */
+    (function () {
+      const parametros = [
+        'gclid',
+        'utm_source',
+        'utm_medium',
+        'utm_campaign',
+        'utm_term',
+        'utm_content'
+      ];
+      const urlParams = new URLSearchParams(window.location.search);
+      const dados = {};
+
+      parametros.forEach(function (param) {
+        const valor = urlParams.get(param);
+        if (valor) {
+          dados[param] = valor;
+        }
+      });
+
+      /* Guarda os dados somente quando houver parâmetros de campanha */
+      if (Object.keys(dados).length > 0) {
+        dados.timestamp = Date.now();
+        localStorage.setItem(
+          'drywall_victorino_atribuicao',
+          JSON.stringify(dados)
+        );
+      }
+    })();
+
+    function obterAtribuicao() {
+      try {
+        return (
+          JSON.parse(
+            localStorage.getItem('drywall_victorino_atribuicao')
+          ) || {}
+        );
+      } catch (e) {
+        return {};
+      }
+    }
+
+    function identificarServico() {
+      const caminho = window.location.pathname.toLowerCase();
+
+      if (caminho.includes('forro-pvc')) {
+        return 'pvc';
+      }
+      if (caminho.includes('drywall')) {
+        return 'drywall';
+      }
+      if (caminho.includes('eletricista')) {
+        return 'eletrica';
+      }
+      if (caminho.includes('gesso')) {
+        return 'gesso';
+      }
+
+      return 'geral';
+    }
+
+    function gerarReferencia() {
+      const atribuicao = obterAtribuicao();
+
+      if (atribuicao.ref) {
+        return atribuicao.ref;
+      }
+
+      const ref =
+        'DV-' + Math.random().toString(36).substring(2, 8).toUpperCase();
+
+      atribuicao.ref = ref;
+      localStorage.setItem(
+        'drywall_victorino_atribuicao',
+        JSON.stringify(atribuicao)
+      );
+
+      return ref;
+    }
+
+    function dispararConversaoWhatsApp(elemento, localBotao) {
+      const atribuicao = obterAtribuicao();
+      const servico = identificarServico();
+      const ref = gerarReferencia();
+
+      console.log('WhatsApp rastreado:', {
+        servico: servico,
+        local: localBotao,
+        referencia: ref,
+        gclid: atribuicao.gclid || '',
+        utm_source: atribuicao.utm_source || '',
+        utm_medium: atribuicao.utm_medium || '',
+        utm_campaign: atribuicao.utm_campaign || '',
+        utm_term: atribuicao.utm_term || '',
+        utm_content: atribuicao.utm_content || ''
+      });
+
       if (typeof gtag === 'function') {
-        // 1. Mantém a conversão atual do Google Ads
+        /* ======================================================
+           GOOGLE ADS
+           Mantém EXATAMENTE a conversão existente
+           ====================================================== */
         gtag('event', 'conversion', {
           'send_to': 'AW-18137133953/EKMnCNK2obUcEIHnushD'
         });
 
-        // 2. NOVO: Envia o evento personalizado para o GA4
+        /* ======================================================
+           GA4
+           ====================================================== */
         gtag('event', 'whatsapp_click', {
+          'service': servico,
+          'button_location': localBotao,
+          'page_path': window.location.pathname,
+          'page_title': document.title,
+          'gclid': atribuicao.gclid || '',
+          'utm_source': atribuicao.utm_source || '',
+          'utm_medium': atribuicao.utm_medium || '',
+          'utm_campaign': atribuicao.utm_campaign || '',
+          'utm_term': atribuicao.utm_term || '',
+          'utm_content': atribuicao.utm_content || '',
+          'lead_reference': ref,
           'event_category': 'lead',
-          'event_label': 'forro pvc' 
+          'event_label': servico + ' - ' + localBotao
         });
+      }
+
+      /* ======================================================
+         Adiciona referência ao texto enviado para o WhatsApp
+         ====================================================== */
+      if (elemento && elemento.href) {
+        try {
+          const url = new URL(elemento.href);
+          const textoAtual = url.searchParams.get('text') || '';
+
+          if (!textoAtual.includes('[ref:')) {
+            url.searchParams.set(
+              'text',
+              textoAtual + ' [ref:' + ref + ']'
+            );
+            elemento.href = url.toString();
+          }
+        } catch (erro) {
+          console.warn(
+            'Não foi possível adicionar referência ao WhatsApp.',
+            erro
+          );
+        }
       }
     }
     </script>
 
+    <meta property="og:title" content="Forro PVC Amadeirado em Botucatu | Drywall Victorino">
+    <meta property="og:description" content="Instalação profissional de Forro PVC Amadeirado em Botucatu. Acabamento elegante, resistente e durável.">
+    <meta property="og:image" content="https://drywallvictorino.com.br/imagens/forro-pvc-amadeirado-1.jpg">
+    <meta property="og:url" content="https://drywallvictorino.com.br/forro-pvc-amadeirado/botucatu/">
+    <meta property="og:type" content="website">
+
+    <style>
+        body {
+            background: #000;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+        header {
+            background: #111;
+            border-bottom: 1px solid #222;
+            padding: 15px 0;
+            text-align: center;
+            font-weight: bold;
+            color: #f4c400;
+        }
+        header p {
+            margin: 0;
+        }
+        /* Seção Hero de Alto Impacto */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('/imagens/forro-pvc-amadeirado-1.jpg') no-repeat center center;
+            background-size: cover;
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 2px solid #f4c400;
+        }
+        .hero h1 {
+            color: #f4c400;
+            font-size: 2.8rem;
+            margin: 0 0 10px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+        .hero p {
+            font-size: 1.3rem;
+            margin: 0 0 30px 0;
+            color: #ccc;
+        }
+        .card {
+            background: #111;
+            border: 1px solid #222;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+        }
+        h2 {
+            color: #f4c400;
+            font-size: 1.8rem;
+            margin-top: 0;
+        }
+        h3 {
+            color: #fff;
+            font-size: 1.3rem;
+            border-left: 3px solid #f4c400;
+            padding-left: 10px;
+            margin-top: 25px;
+        }
+        p, li {
+            color: #ccc;
+            line-height: 1.6;
+            font-size: 1.05rem;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #f4c400;
+            text-decoration: underline;
+        }
+        a:hover {
+            color: #fff;
+        }
+        /* Botões de Ação */
+        .btn-whatsapp {
+            background: #25d366;
+            color: #fff;
+            padding: 16px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+            cursor: pointer;
+        }
+        .btn-whatsapp:hover {
+            background: #128c7e;
+            color: #fff;
+            transform: scale(1.02);
+        }
+        .whatsapp-float {
+            position: fixed;
+            width: 140px;
+            height: 45px;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: #fff;
+            border-radius: 50px;
+            text-align: center;
+            font-weight: bold;
+            line-height: 45px;
+            text-decoration: none;
+            z-index: 1000;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            cursor: pointer;
+        }
+        .whatsapp-float:hover {
+            background-color: #128c7e;
+            transform: scale(1.05);
+        }
+        /* Galeria Moderna em Grid */
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .galeria img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 1px solid #222;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .galeria img:hover {
+            transform: scale(1.03);
+            border-color: #f4c400;
+        }
+        .review-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #222;
+            padding-bottom: 15px;
+        }
+        .review-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        footer {
+            background: #111;
+            border-top: 1px solid #222;
+            padding: 30px 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+    </style>
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
+      "@type": "HomeAndConstructionBusiness",
       "name": "Drywall Victorino",
-      "url": "https://drywallvictorino.com.br/",
-      "telephone": "+5511983316372",
+      "image": "https://drywallvictorino.com.br/imagens/forro-pvc-amadeirado-1.jpg",
+      "url": "https://drywallvictorino.com.br/forro-pvc-amadeirado/botucatu/",
+      "telephone": "+5511983316372", 
+      "email": "drywallvictorino@gmail.com",
+      "priceRange": "$$",
+      "openingHours": "Mo-Sa 08:00-18:00",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Botucatu",
         "addressRegion": "SP",
         "addressCountry": "BR"
       },
-      "areaServed": "Botucatu e região"
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "13"
+      },
+      "sameAs":[
+        "https://share.google/BUrLN2GQRttuQYoCa",
+        "https://drywallvictorino.com.br"
+      ],
+      "areaServed": [
+        "Botucatu",
+        "Rubião Júnior",
+        "São Manuel",
+        "Pardinho",
+        "Itatinga",
+        "Bofete"
+      ],
+      "serviceType": "Instalação de Forro PVC Amadeirado"
     }
     </script>
-
-    <!-- MELHORIA 3: Inclusão do Schema de Avaliação (AggregateRating) -->
-    <script type="application/ld+json">
-    {
-     "@context":"https://schema.org",
-     "@type":"LocalBusiness",
-     "name":"Drywall Victorino",
-     "telephone":"+5511983316372",
-     "aggregateRating":{
-       "@type":"AggregateRating",
-       "ratingValue":"5",
-       "reviewCount":"13"
-     }
-    }
-    </script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <style>
-        /* CONFIGURAÇÕES GERAIS - Preto & Dourado Premium */
-        :root {
-            --cor-fundo: #000000;
-            --cor-card: #121212;
-            --cor-borda: #222222;
-            --cor-primaria: #f4c400; /* Dourado */
-            --cor-texto: #ffffff;
-            --cor-texto-mutado: #aaaaaa;
-            --cor-whatsapp: #25d366; /* Verde Conversão */
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            scroll-behavior: smooth;
-        }
-
-        body {
-            background-color: var(--cor-fundo);
-            color: var(--cor-texto);
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        section {
-            padding: 60px 0;
-            border-bottom: 1px solid var(--cor-borda);
-        }
-
-        h2 {
-            font-size: 2rem;
-            color: var(--cor-primaria);
-            text-align: center;
-            margin-bottom: 40px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        header {
-            background-color: rgba(0, 0, 0, 0.95);
-            border-bottom: 1px solid var(--cor-borda);
-            padding: 15px 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        header .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo h1 {
-            color: var(--cor-primaria);
-            font-size: 1.5rem;
-            font-weight: 800;
-            letter-spacing: 1.5px;
-        }
-
-        .logo p {
-            font-size: 0.75rem;
-            color: var(--cor-texto-mutado);
-            text-transform: uppercase;
-        }
-
-        .header-contato a {
-            background-color: var(--cor-primaria);
-            color: #000000;
-            padding: 10px 18px;
-            border-radius: 5px;
-            font-weight: bold;
-            font-size: 0.9rem;
-            transition: 0.3s; 
-        }
-
-        .header-contato a:hover { opacity: 0.9; }
-
-        .hero {
-            padding: 80px 0;
-            text-align: center;
-            background: linear-gradient(180deg, #050505 0%, #000000 100%);
-        }
-
-        .hero h2 {
-            color: var(--cor-texto);
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-            text-transform: none;
-        }
-
-        .hero p {
-            font-size: 1.1rem;
-            color: var(--cor-texto-mutado);
-            max-width: 800px;
-            margin: 0 auto 35px auto;
-        }
-
-        .btn-cta {
-            display: inline-block;
-            background-color: var(--cor-whatsapp);
-            color: #ffffff;
-            padding: 16px 32px;
-            border-radius: 50px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            transition: 0.3s ease;
-            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
-        }
-
-        .btn-cta:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
-        }
-
-        /* SILO LINKS EXTERNOS/INTERNOS */
-        .silo-container {
-            background-color: var(--cor-card);
-            border: 2px dashed var(--cor-primaria);
-            border-radius: 8px;
-            padding: 30px;
-            margin: 40px 0;
-            text-align: center;
-        }
-        .silo-title {
-            font-weight: 700;
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-            color: #fff;
-        }
-        .silo-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 15px;
-        }
-        .silo-link {
-            background: #000;
-            border: 1px solid var(--cor-borda);
-            padding: 15px;
-            border-radius: 6px;
-            font-weight: bold;
-            color: var(--cor-primaria);
-            transition: 0.2s;
-        }
-        .silo-link:hover {
-            background: var(--cor-primaria);
-            color: #000;
-        }
-
-        .sobre-card {
-            background-color: var(--cor-card);
-            border: 1px solid var(--cor-borda);
-            border-radius: 8px;
-            padding: 30px;
-            max-width: 900px;
-            margin: 0 auto;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-        }
-
-        .sobre-card p {
-            font-size: 1.05rem;
-            line-height: 1.8;
-            margin-bottom: 15px;
-            color: #f1f1f1;
-        }
-
-        .sobre-card p:last-child { margin-bottom: 0; }
-
-        .grid-servicos {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-        }
-
-        .card {
-            background-color: var(--cor-card);
-            border: 1px solid var(--cor-borda);
-            border-radius: 8px;
-            overflow: hidden;
-            transition: transform 0.3s ease, border-color 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            border-color: var(--cor-primaria);
-        }
-
-        .card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-bottom: 1px solid var(--cor-borda);
-        }
-
-        .card-content { padding: 20px; }
-
-        .card-content h3 {
-            color: var(--cor-primaria);
-            font-size: 1.25rem;
-            margin-bottom: 10px;
-        }
-
-        .card-content p {
-            color: var(--cor-texto-mutado);
-            font-size: 0.95rem;
-            line-height: 1.5;
-        }
-
-        .cidades-box {
-            background-color: var(--cor-card);
-            border: 1px solid var(--cor-borda);
-            border-radius: 8px;
-            padding: 30px;
-            text-align: center;
-        }
-
-        .cidades-box p {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: #f1f1f1;
-        }
-
-        .grid-depoimentos {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-        }
-
-        .depoimento-card {
-            background-color: var(--cor-card);
-            border: 1px solid var(--cor-borda);
-            border-radius: 8px;
-            padding: 25px;
-            position: relative;
-        }
-
-        .depoimento-card::before {
-            content: "“";
-            font-size: 5rem;
-            color: rgba(244, 196, 0, 0.1);
-            position: absolute;
-            top: -10px;
-            left: 15px;
-            font-family: serif;
-        }
-
-        .depoimento-card p {
-            font-style: italic;
-            color: #e0e0e0;
-            margin-bottom: 15px;
-            position: relative;
-            z-index: 1;
-        }
-
-        .depoimento-autor {
-            color: var(--cor-primaria);
-            font-weight: bold;
-            font-size: 0.9rem;
-        }
-
-        .faq-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .faq-item {
-            background-color: var(--cor-card);
-            border: 1px solid var(--cor-borda);
-            border-radius: 8px;
-            padding: 20px;
-        }
-
-        .faq-item h3 {
-            color: var(--cor-primaria);
-            font-size: 1.05rem;
-            margin-bottom: 10px;
-        }
-
-        .faq-item p {
-            color: var(--cor-texto-mutado);
-            font-size: 0.9rem;
-            line-height: 1.6;
-        }
-
-        footer {
-            background-color: #050505;
-            padding: 40px 0;
-            text-align: center;
-            font-size: 0.9rem;
-            color: var(--cor-texto-mutado);
-            border-top: 2px solid var(--cor-primaria);
-        }
-
-        footer h3 {
-            color: var(--cor-primaria);
-            margin-bottom: 15px;
-            font-size: 1.3rem;
-        }
-
-        footer p { margin-bottom: 8px; }
-
-        footer a {
-            color: var(--cor-primaria);
-            transition: 0.3s;
-        }
-
-        footer a:hover { text-decoration: underline; }
-
-        .whatsapp-floating {
-            position: fixed;
-            bottom: 25px;
-            right: 25px;
-            background-color: var(--cor-whatsapp);
-            color: white;
-            width: 60px;
-            height: 60px;
-            border-radius: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 30px;
-            box-shadow: 2px 2px 15px rgba(0,0,0,0.4);
-            z-index: 1000;
-            transition: transform 0.3s ease;
-        }
-
-        .whatsapp-floating:hover { transform: scale(1.1); }
-
-        /* Estilização Extra do Bloco do Google */
-        .avaliacoes-google-section {
-            background-color: var(--cor-card);
-            text-align: center;
-        }
-        .btn-google {
-            display: inline-block;
-            background-color: var(--cor-primaria);
-            color: #000000;
-            padding: 14px 28px;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: 0.3s ease;
-        }
-        .btn-google:hover {
-            opacity: 0.9;
-            transform: translateY(-1px);
-        }
-
-        @media (max-width: 768px) {
-            .hero h2 { font-size: 2rem; }
-            header .container {
-                flex-direction: column;
-                gap: 15px;
-                text-align: center;
-            }
-        }
-    </style>
 </head>
 <body>
 
+    <a href="https://wa.me/5511983316372?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20forro%20PVC%20amadeirado" class="whatsapp-float" rel="noopener" target="_blank" onclick="dispararConversaoWhatsApp(this, 'flutuante')">
+        WhatsApp
+    </a>
+
     <header>
         <div class="container">
-            <div class="logo">
-                <h1>DRYWALL VICTORINO</h1>
-                <p>Drywall, Gesso, Forro PVC e Elétrica</p>
-            </div>
-            <div class="header-contato">
-                <a href="https://wa.me/5511983316372?text=Ol%C3%A1%21+Vi+o+site+da+Drywall+Victorino+e+gostaria+de+um+or%C3%A7amento." target="_blank" onclick="dispararConversaoWhatsApp()">
-                    <i class="fab fa-whatsapp"></i> (11) 98331-6372
+            <p>
+                <a href="https://wa.me/5511983316372?text=Ol%C3%A1%21+Vi+o+site+da+Drywall+Victorino+e+gostaria+de+um+or%C3%A7amento." target="_blank" onclick="dispararConversaoWhatsApp(this, 'cabecalho')">
+                    Drywall Victorino — Gesso, PVC, Elétrica e Pintura
                 </a>
-            </div>
+            </p>
         </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="container">
-                <h2>Especialistas em Forro PVC, Drywall e Gesso em Botucatu</h2>
-                <p>Projetos residenciais e comerciais com foco em acabamento premium, organization estrutural e entrega rápida. Soluções modernas e duráveis sob medida para o seu espaço.</p>
-                <a href="https://wa.me/5511983316372?text=Ol%C3%A1%21+Vi+o+site+da+Drywall+Victorino+e+gostaria+de+um+or%C3%A7amento." target="_blank" onclick="dispararConversaoWhatsApp()" class="btn-cta">
-                    Solicitar Orçamento no WhatsApp
-                </a>
+    <section class="hero">
+        <div class="container">
+            <h1>Forro PVC Amadeirado em Botucatu</h1>
+            <h2 style="font-size:1.3rem; color:#ccc; margin: 0 0 20px 0; font-weight: normal; border: none; padding: 0;">
+                Instalação de Forro PVC Amadeirado em Botucatu, São Manuel, Pardinho e Região
+            </h2>
+            <p>A elegância da madeira nobre com a durabilidade e economia do PVC.</p>
+            <p style="font-size: 1.05rem; color: #aaa; margin-bottom: 25px;">Também realizamos a instalação de <a href="/forro-pvc/botucatu/">Forro PVC em Botucatu</a> na versão tradicional branca.</p>
+            <a href="https://wa.me/5511983316372?text=Ol%C3%A1%21+Vi+o+site+da+Drywall+Victorino+e+gostaria+de+um+or%C3%A7amento." target="_blank" onclick="dispararConversaoWhatsApp(this, 'hero')" class="btn-whatsapp btn-cta">
+                SOLICITAR ORÇAMENTO GRÁTIS
+            </a>
+        </div>
+    </section>
 
-                <!-- BLOCO ESTRATÉGICO DE LINKS INTERNOS (SILO SEO) -->
-                <div class="silo-container">
-                    <div class="silo-title">🛠️ Acesse Nossos Serviços Especializados em Botucatu-SP:</div>
-                    <div class="silo-grid">
-                        <a href="https://drywallvictorino.com.br/drywall/botucatu/" class="silo-link">🔹 Especialista em Drywall & Divisórias</a>
-                        <a href="https://drywallvictorino.com.br/forro-pvc/botucatu/" class="silo-link">🔹 Instalação Completa de Forro PVC</a>
-                        <a href="https://drywallvictorino.com.br/eletricista-botucatu/" class="silo-link">🔹 Eletricista Residencial & Comercial</a>
-                    </div>
-                </div>
+    <main class="container">
+        <article>
+            
+            <div class="card">
+                <h2>Aparência Sofisticada para o seu Teto</h2>
+                <p>Esqueça o visual simples do plástico branco comum. O Forro PVC Amadeirado traz o aconchego e o requinte da madeira natural para o ambiente, sendo a escolha perfeita para quem busca valorizar residências, varandas gourmet, escritórios e salas comerciais em Botucatu e região de forma rápida e muito mais barata do que as estruturas tradicionais.</p>
             </div>
-        </section>
 
-        <section id="sobre">
-            <div class="container">
-                <h2>Sobre a Drywall Victorino</h2>
-                <div class="sobre-card">
-                    <p>A Drywall Victorino atua em Botucatu e região oferecendo soluções de altíssimo padrão em drywall, gesso decorativo, forros de PVC, divisórias, sancas e elétrica residencial para clientes residenciais e comerciais que buscam durabilidade e estética refinada.</p>
-                    <p>O nosso maior diferencial é o profissionalismo: além de trabalhar com materiais de excelente durabilidade e equipe especializada, temos o compromisso inegociável de entregar a sua obra <strong>totalmente limpa e dentro do prazo combinado</strong>.</p>
-                    <p>Facilitamos o processo de orçamento e atendimento em um raio de até 70 km de Botucatu-SP, garantindo suporte completo do projeto até o acabamento de iluminação fina.</p>
-                </div>
+            <div class="card">
+                <h2>Forro PVC Amadeirado para Residências e Comércios</h2>
+                <p>Nossa equipe projeta a aplicação do material adaptando-se perfeitamente às exigências visuais e térmicas de cada cômodo. Trabalhamos com modelos específicos para cada necessidade de projeto:</p>
+                <ul>
+                    <li><strong>Forro PVC amadeirado para sala:</strong> Cria uma atmosfera acolhedora e elegante, combinando perfeitamente com projetos de iluminação embutida em LED.</li>
+                    <li><strong>Forro PVC amadeirado para quarto:</strong> Proporciona excelente conforto visual e sofisticação para áreas de descanso.</li>
+                    <li><strong>Forro PVC amadeirado para varanda:</strong> Resistente às ações do tempo e ventos, ideal para beirais e tetos externos protegidos.</li>
+                    <li><strong>Forro PVC amadeirado residencial:</strong> A alternativa inteligente para cobrir casas inteiras com rapidez e excelente custo-benefício.</li>
+                    <li><strong>Forro PVC amadeirado comercial:</strong> Sofisticação e alta durabilidade sob medida para escritórios, consultórios, lojas e recepções.</li>
+                </ul>
             </div>
-        </section>
 
-        <!-- SEÇÃO EXPANDIDA DE CONTEÚDO TÉCNICO PARA SEO -->
-        <section id="detalhes-servicos">
-            <div class="container">
-                <h2>Nossos Serviços Especializados</h2>
-                <div class="sobre-card" style="max-width: 100%; margin-bottom: 30px;">
-                    <h3>Forro PVC em Botucatu SP</h3>
-                    <p style="margin-top:10px;">Para quem busca uma solução ágil, impermeável e de facílima higienização, a instalação de <strong>Forro PVC em Botucatu</strong> feita por nossa equipe é a melhor escolha. Trabalhamos com réguas de PVC normatizadas de alta densidade que não cedem e oferecem excelente isolamento visual para cozinhas, banheiros, garagens e galpões comerciais.</p>
-                </div>
+            <div class="card">
+                <h2>Instalação de Forro PVC Amadeirado</h2>
+                <p>A montagem executada pela <strong>Drywall Victorino</strong> segue rigorosos padrões de alinhamento e fixação estrutural. Utilizamos perfis de sustentação firmes para garantir que as lâminas fiquem bem travadas e não cedam com o passar dos anos. Entregamos o projeto completo, cuidando desde as marcações de nível até o acabamento fino dos cantos e molduras.</p>
+            </div>
+
+            <div class="card">
+                <h2>Vantagens do Forro PVC que imita Madeira</h2>
                 
-                <div class="sobre-card" style="max-width: 100%; margin-bottom: 30px;">
-                    <h3>Sistemas de Drywall e Divisórias Inteligentes</h3>
-                    <p style="margin-top:10px;">Projetamos e executamos paredes de <strong>Drywall em Botucatu</strong> estruturadas com perfis de aço galvanizado e placas acartonadas de alta resistência mecânica. Perfeito para criar divisórias de ambientes corporativos, closets, nichos decorativos ou isolamentos acústicos funcionais de forma limpa, sem a necessidade de tijolos ou massa pesada.</p>
-                </div>
+                <h3>🛡️ Resistência Máxima à Umidade e Pragas</h3>
+                <p>Diferente da madeira natural, o PVC amadeirado não mofa, não apodrece e é 100% resistente contra cupins e brocas. É o acabamento ideal para áreas internas, mas também para áreas externas cobertas, beirais e varandas.</p>
+                
+                <h3>✨ Visual Contínuo e Praticidade</h3>
+                <p>O material conta com acabamento de junta seca (encaixe perfeito que esconde as emendas das placas) e reproduz com riqueza de detalhes os veios de madeiras nobres como Mogno e Imbuia. Além disso, a limpeza é simples, exigindo apenas um pano úmido.</p>
+            </div>
 
-                <div class="sobre-card" style="max-width: 100%;">
-                    <h3>Eletricista Credenciado e Instalações Seguras</h3>
-                    <p style="margin-top:10px;">Uma infraestrutura de gesso premium exige uma iluminação impecável. Nossos serviços de <strong>Eletricista em Botucatu</strong> englobam a montagem estruturada de quadros de disjuntores, passagem de fiação segura seguindo a norma NBR 5410, e instalação técnica de spots de LED, rasgos de luz e fitas de LED embutidas.</p>
+            <div class="card">
+                <h2>Comparação Inteligente: Forro PVC x Gesso</h2>
+                <p>Muitos clientes ficam em dúvida entre colocar gesso ou PVC na reforma. Veja por que o forro de PVC estruturado se destaca:</p>
+                <ul>
+                    <li><strong>Sem quebra-quebra:</strong> A instalação é extremamente limpa, rápida e não gera aquela poeira branca pesada do gesso.</li>
+                    <li><strong>Manutenção zero:</strong> O gesso pode trincar com vibrações ou amarelar com o tempo, necessitando de nova pintura. O PVC amadeirado mantém a cor e o brilho originais sem pintura.</li>
+                    <li><strong>Imunidade à água:</strong> Se houver um pequeno vazamento no telhado, o gesso amolece e cai. O PVC resiste totalmente à água.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Preço de Forro PVC Amadeirado colocado em Botucatu</h2>
+                <p>Por ser um serviço técnico sob medida, nós não trabalhamos com tabelas engessadas na página. O valor correto do seu projeto completo depende diretamente da metragem quadrada do local, da altura do teto (pé-direito) e do modelo de moldura escolhido. Nós fornecemos o pacote completo (Material Premium + Mão de Obra Especializada) ou fazemos apenas a montagem se você já comprou as lâminas.</p>
+                <p><strong>Facilidade no Pagamento:</strong> Para ajudar você a tirar sua reforma do papel, parcelamos o valor do seu orçamento no cartão de crédito.</p>
+            </div>
+
+            <div class="card">
+                <h2>Projetos Realizados pela Drywall Victorino</h2>
+                <p>Confira abaixo a qualidade real das obras de forro que entregamos em Botucatu e região:</p>
+                
+                <div class="galeria">
+                    <img src="/imagens/forro-pvc-amadeirado-1.jpg" alt="Instalação de forro PVC amadeirado em residência em Botucatu" title="Forro PVC Amadeirado Residencial" loading="lazy">
+                    <img src="/imagens/forro%20de%20pvc%20casa%203.jfif" alt="Detalhe do acabamento de forro PVC imitando madeira na região de Botucatu" title="Acabamento Forro PVC Imitação Madeira" loading="lazy">
+                    <img src="/imagens/forro-pvc-amadeirado%203.jpg" alt="Forro PVC amadeirado instalado em varanda gourmet em Botucatu" title="Forro PVC Amadeirado Área Gourmet" loading="lazy">
+                    <img src="/imagens/forro%20de%20pvc%20casa%205.jfif" alt="Forro PVC amadeirado com iluminação embutida de LED realizado pela Drywall Victorino" title="Forro PVC Amadeirado com Iluminação LED" loading="lazy">
+                    <img src="/imagens/ChatGPT%20Image%2024%20de%20mai.%20de%202026%2C%2000_07_37.png" alt="Acabamento premium de forro PVC amadeirado em Botucatu" title="Forro PVC Amadeirado Premium" loading="lazy">
                 </div>
             </div>
-        </section>
 
-        <!-- ======================================================== -->
-        <!-- BLOCO DE AVALIAÇÕES ATUALIZADO (PROVA SOCIAL DE ADS)     -->
-        <!-- ======================================================== -->
-        <section id="avaliacoes-google-cta" class="avaliacoes-google-section">
-            <div class="container">
-                <div class="avaliacoes-google" style="max-width: 800px; margin: 0 auto;">
-                    <h2 style="margin-bottom: 20px;">Mais de 10 clientes satisfeitos ⭐⭐⭐⭐⭐</h2>
-                    
-                    <p style="font-size: 1.1rem; color: var(--cor-texto-mutado); margin-bottom: 30px; line-height: 1.6;">
-                        Veja avaliações reais de clientes que contrataram nossos serviços
-                        de Forro PVC, Drywall e Gesso em Botucatu.
-                    </p>
+            <div class="card">
+                <h2>O que nossos clientes dizem</h2>
+                
+                <div class="review-item">
+                    <p>⭐⭐⭐⭐⭐ <strong>Tatiane Calazans:</strong> "Melhor empresa de forro de PVC em Botucatu! Contratei para fazer a instalação de forro de PVC na minha casa inteira. Trabalho bem feito, dentro do prazo e com acabamento impecável."</p>
+                </div>
 
-                    <!-- MELHORIA 1: Texto do botão atualizado para aumentar cliques -->
-                    <a href="https://share.google/giddVJQiw9kmJJg5L"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="btn-google">
-                       <i class="fab fa-google" style="margin-right: 8px;"></i> ⭐⭐⭐⭐⭐ Ver 13 avaliações no Google
+                <div class="review-item">
+                    <p>⭐⭐⭐⭐⭐ <strong>Izabel Costa:</strong> "Gostei muito do serviço! Profissional competente, caprichoso e compromissado. Hoje em dia, está difícil encontrar profissionais com palavra. Preço justo."</p>
+                </div>
+
+                <div class="review-item">
+                    <p>⭐⭐⭐⭐⭐ <strong>Bety Santos:</strong> "Precisei de um orçamento de forro de PVC em Botucatu e o pessoal da Drywall Victorino foi super rápido no atendimento."</p>
+                </div>
+
+                <div class="review-item">
+                    <p>⭐⭐⭐⭐⭐ <strong>Renan Kaique:</strong> "Contratei a Drywall Victorino para instalação de forro PVC em Botucatu e fiquei muito satisfeito com o resultado."</p>
+                </div>
+            </div>
+
+            <div class="card" style="border-color: #f4c400;">
+                <h2>Drywall Victorino no Google</h2>
+                <p>Veja fotos das nossas obras finalizadas, depoimentos reais e avaliações de clientes que já contrataram a nossa mão de obra na cidade.</p>
+                <p style="margin-bottom: 0;">
+                    <a href="https://share.google/BUrLN2GQRttuQYoCa" target="_blank" rel="noopener" style="font-weight: bold; text-decoration: none;">
+                        ⭐ VER PERFIL E AVALIAÇÕES DA DRYWALL VICTORINO NO GOOGLE
                     </a>
-
-                    <!-- MELHORIA 2: Linha de apoio com nota comercial logo abaixo do botão -->
-                    <p style="margin-top:15px;color:#f4c400;font-weight:bold;">
-                        Nota 5,0 no Google • Clientes de Botucatu e Região
-                    </p>
-                </div>
+                </p>
             </div>
-        </section>
-        <!-- ======================================================== -->
 
-        <section id="servicos">
-            <div class="container">
-                <h2>Galeria de Soluções</h2>
-                <div class="grid-servicos">
-                    <div class="card">
-                        <img src="imagens/forro de pvc.png" alt="Forro PVC Instalado em Botucatu">
-                        <div class="card-content">
-                            <h3>Forro PVC</h3>
-                            <p>Instalação de forro PVC moderno, resistente e fácil de limpar. Ideal para áreas que buscam praticidade e imunidade contra umidade.</p>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="imagens/gesso3.jfif" alt="Divisória de Drywall em Botucatu">
-                        <div class="card-content">
-                            <h3>Drywall e Divisórias</h3>
-                            <p>Paredes, nichos, sancas e divisórias modernas para ambientes residenciais e comerciais. Otimização rápida de espaço sem sujeira.</p>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                       <img src="imagens/sanca de gesso.png" alt="Sanca de Gesso com LED em Botucatu">
-                        <div class="card-content">
-                            <h3>Forro e Sancas de Gesso</h3>
-                            <p>Projetos decorativos com acabamento profissional e sancas modernas de gesso sob medida para valorizar a arquitetura do seu ambiente.</p>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                       <img src="imagens/eletrica.png" alt="Instalação Elétrica Residencial em Botucatu">
-                        <div class="card-content">
-                            <h3>Elétrica Residencial</h3>
-                            <p>Instalação completa de fiação segura, quadros de distribuição, spots de LED e fitas de LED embutidas no gesso para um efeito elegante de iluminação.</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="card">
+                <h2>Atendimento em Todos os Bairros de Botucatu e Região</h2>
+                <p>Garantimos rapidez na visita técnica para medições e orçamentos. Atendemos com veículo próprio as cidades de <strong>Botucatu, Rubião Júnior, São Manuel, Pardinho, Itatinga e Bofete</strong>.</p>
+                <p><strong>Bairros com atendimento rápido em Botucatu:</strong> Centro, Vila dos Lavradores, Jardim Paraíso, Lavapés, Cohab, Jardim Brasil, Jardim Aeroporto, Altos do Paraíso, Vila Maria, Vila Rodrigues, Comerciários e condomínios fechados da região.</p>
             </div>
-        </section>
 
-        <section id="cidades">
-            <div class="container">
-                <h2>Cidades Atendidas</h2>
-                <div class="cidades-box">
-                    <p>Atendemos clientes residenciais, comerciais e corporativos em <strong>Botucatu e região</strong> em um raio de até 70 km, cobrindo as seguintes cidades:</p>
-                    <p style="margin-top: 15px; font-weight: bold; color: var(--cor-primaria);">
-                        Botucatu • São Manuel • Pardinho • Avaré • Bofete • Lençóis Paulista • Agudos • Jaú • Pratânia • Itatinga • Areiópolis
-                    </p>
-                </div>
-            </div>
-        </section>
+            <div class="card">
+                <h2>Perguntas Frequentes sobre Forro PVC Amadeirado</h2>
+                
+                <h3>O forro amadeirado desbota com o tempo?</h3>
+                <p>Não. Trabalhamos com marcas que utilizam películas com proteção contra raios UV, garantindo que o tom amadeirado mantenha a cor viva e o acabamento elegante por muitos anos em locais cobertos.</p>
 
-        <section id="depoimentos">
-            <div class="container">
-                <h2>O Que Nossos Clientes Dizem</h2>
-                <div class="grid-depoimentos">
-                    <div class="depoimento-card">
-                        <p>Excelente acabamento e serviço entregue rigorosamente dentro do prazo combinado. O teto de drywall ficou perfeito e limpo.</p>
-                        <div class="depoimento-autor">- Carlos Henrique (Botucatu/SP)</div>
-                    </div>
-                    <div class="depoimento-card">
-                        <p>Instalação perfeita do drywall e todo o projeto de iluminação em LED embutida. Super organizados e educados durante a obra.</p>
-                        <div class="depoimento-autor">- Marcelo Oliveira (São Manuel/SP)</div>
-                    </div>
-                    <div class="depoimento-card">
-                        <p>Atendimento rápido de orçamento, equipe ágil e preço justo. Fizeram o forro de PVC do meu comércio com muita perfeição.</p>
-                        <div class="depoimento-autor">- Roberto Almeida (Botucatu/SP)</div>
-                    </div>
-                </div>
+                <h3>Vocês cobram a visita de orçamento em Botucatu?</h3>
+                <p>Não. A visita no local para tirar as medidas corretas da sua área e a montagem do orçamento detalhado são totalmente gratuitas e sem compromisso.</p>
+                
+                <h3>O material já está incluso no valor do orçamento?</h3>
+                <p>Nós trabalhamos das duas maneiras. Podemos fechar o projeto com toda a estrutura, molduras e placas inclusas, ou você pode comprar o material e nós cobramos apenas a mão de obra de instalação.</p>
             </div>
-        </section>
 
-        <section id="faq">
-            <div class="container">
-                <h2>Perguntas Frequentes</h2>
-                <div class="faq-grid">
-                    <div class="faq-item">
-                        <h3>Vocês fazem forro PVC?</h3>
-                        <p>Sim. Trabalhamos com instalação completa de forro PVC de alta qualidade e durabilidade, ideal para áreas úmidas ou comerciais.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3>O orçamento é gratuito?</h3>
-                        <p>Sim! Você pode nos enviar fotos e vídeos das suas ideias pelo WhatsApp para receber uma estimativa inicial sem qualquer compromisso.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3>Vocês atendem empresas?</h3>
-                        <p>Sim. Atendemos clientes residenciais de todos os portes e também realizamos obras comerciais e corporativas em toda a nossa região de cobertura.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3>Como funciona a limpeza pós-obra?</h3>
-                        <p>Um dos nossos maiores pilares é o respeito pela sua casa ou comércio. Ao finalizar o trabalho de gesso e fiação, removemos todos os resíduos de gesso/drywall e deixamos o ambiente limpo.</p>
-                    </div>
-                </div>
+            <div class="card">
+                <h2>Outros Serviços Especializados</h2>
+                <ul>
+                    <li><a href="/forro-pvc/botucatu/">Forro PVC Tradicional em Botucatu</a></li>
+                    <li><a href="/">Paredes e Forros de Drywall em Botucatu</a></li>
+                    <li><a href="/forro-gesso/botucatu/">Forro de Gesso Decorado em Botucatu</a></li>
+                </ul>
             </div>
-        </section>
+
+        </article>
     </main>
 
     <footer>
         <div class="container">
-            <h3>Drywall Victorino</h3>
-            <p>Especialistas em Drywall, Gesso, Forro PVC, Divisórias e Elétrica Residencial em Botucatu e Região.</p>
-            <p>Atendimento em Botucatu - SP e região (raio de até 70 km)</p>
-            <p>WhatsApp: (11) 98331-6372</p>
-            <p style="margin-top: 15px; font-size: 0.8rem;">© 2026 Todos os direitos reservados.</p>
-            <p style="margin-top: 10px;">
-                <a href="politica-de-privacidade.html">Política de Privacidade</a>
-            </p>
+            <p>© Drywall Victorino — Todos os direitos reservados.</p>
+            <p style="font-size: 0.9rem; color: #777; margin-top: 5px;">Botucatu - SP e Região</p>
         </div>
     </footer>
-
-    <a href="https://wa.me/5511983316372?text=Ol%C3%A1%21+Vi+o+site+da+Drywall+Victorino+e+gostaria+de+um+or%C3%A7amento." class="whatsapp-floating" target="_blank" onclick="dispararConversaoWhatsApp()">
-        <i class="fab fa-whatsapp"></i>
-    </a>
 
 </body>
 </html>
